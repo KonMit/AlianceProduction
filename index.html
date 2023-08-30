@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aliance Production</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header__nav navbar">
+          <a href="./" class="navbar__logo logo logo_light">
+            <img src="./img/logo-light.svg" alt="Logo" />
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">О компании</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Контрактное производство</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Собственные торговые марки</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Новости</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="navbar__right">
+            <a href="tel:+74996861014" class="navbar__phone"
+              ><img src="./img/phone.svg" alt="icon: phone" class="navbar__phone-icon" />
+              <span class="navbar__phone-text">+7 (499) 686-10-14</span>
+            </a>
+            <button class="navbar__button button" type="button">Получить консультацию</button>
+          </div>
+        </nav>
+      </header>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
