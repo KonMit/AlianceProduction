@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   color: #ffffff;
-  font-family: Noto Sans;
+  font-family: "Noto Sans";
   font-size: 16px;
   font-style: normal;
   padding: 0;
@@ -24,16 +24,18 @@ a {
 .header {
 }
 .header__nav {
-  background: #6b6b6b;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 .button {
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
+  text-align: center;
   line-height: 160%;
   background: #5c8ee5;
 }
 .logo {
+  height: 100%;
 }
 .logo_light {
 }
@@ -43,7 +45,8 @@ a {
   color: #ffffff;
 }
 .navbar__logo {
-  padding: 0px 50px;
+  padding: 24px 50px;
+  border-left: 1px solid rgba(235, 235, 240, 0.2);
 }
 .navbar__list {
   display: flex;
@@ -75,5 +78,6 @@ a {
 }
 .navbar__button {
   flex-shrink: 0;
+  height: 100%;
   padding: 34px 50px;
 }
