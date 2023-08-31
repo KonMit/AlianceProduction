@@ -1,0 +1,22 @@
+.wrapper {
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+.button {
+  font-family: "Noto Sans";
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  line-height: 160%;
+  background: #5c8ee5;
+  height: 100%;
+}
+.separator {
+  width: 150px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #5c8ee5;
+}
