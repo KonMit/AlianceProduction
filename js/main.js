@@ -13,7 +13,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-navbarBurger.addEventListener("click", () => {
+navbarBurger.addEventListener("click", (e) => {
+  e.preventDefault();
   if (!mobileMenu.classList.contains("isOpen")) {
     navbar.classList.add("navbar_light");
     navbar.classList.add("isOpen");
@@ -21,10 +22,16 @@ navbarBurger.addEventListener("click", () => {
     mobileMenu.classList.add("isOpen");
     document.body.style.overflow = "hidden";
   } else {
-    mobileMenu.classList.remove("isOpen");
-    navbar.classList.remove("navbar_light");
-    navbar.classList.remove("isOpen");
-    navbarLogoSvg.href.baseVal = "img/sprite.svg#logo-light";
-    document.body.style.overflow = "visible";
+    if (this.scrollY > 1) {
+      mobileMenu.classList.remove("isOpen");
+      navbar.classList.remove("isOpen");
+      document.body.style.overflow = "visible";
+    } else {
+      mobileMenu.classList.remove("isOpen");
+      navbar.classList.remove("navbar_light");
+      navbar.classList.remove("isOpen");
+      navbarLogoSvg.href.baseVal = "img/sprite.svg#logo-light";
+      document.body.style.overflow = "visible";
+    }
   }
 });
