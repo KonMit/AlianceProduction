@@ -8,10 +8,16 @@
   margin: 0;
 }
 .header {
-  padding-top: 94px;
   position: relative;
   background: url("../img/header-bg.png");
   background-size: cover;
+  min-height: 100vh;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   min-height: 100vh;
 }
 .header::before {
@@ -53,6 +59,7 @@
   border: 1px solid rgba(235, 235, 240, 0.2);
   border-bottom: none;
   padding: 30px 50px;
+  max-height: 168px;
 }
 .header__features-item:not(:last-child) {
   border-right: none;
