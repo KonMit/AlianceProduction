@@ -19,6 +19,15 @@
   <body>
     <div class="wrapper">
       <nav class="header__nav navbar">
+        <a href="#" class="navbar__burger">
+          <div class="navbar__burger-lines">
+            <div class="navbar__burger-line"></div>
+            <div class="navbar__burger-line"></div>
+            <div class="navbar__burger-line"></div>
+          </div>
+          <span class="navbar__burger-title title title_h3">Меню</span>
+        </a>
+
         <a href="/" class="navbar__logo logo">
           <svg class="icon navbar__logo-svg">
             <use href="img/sprite.svg#logo-light"></use>
@@ -48,7 +57,12 @@
             </svg>
             <span class="navbar__phone-text">+7 (499) 686-10-14</span>
           </a>
-          <button class="navbar__button button" type="button">Получить консультацию</button>
+          <button class="navbar__button button" type="button">
+            <span class="navbar__button-text">Получить консультацию</span>
+            <svg class="icon navbar__button-icon" width="24" height="24">
+              <use href="img/sprite.svg#phone-light"></use>
+            </svg>
+          </button>
         </div>
       </nav>
       <header class="header">
