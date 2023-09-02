@@ -96,6 +96,7 @@
   transition: all 0.2s;
 }
 .navbar_light .navbar__logo {
+  border-right: 1px solid rgba(235, 235, 240, 1);
   padding: 15px 50px;
 }
 .navbar__list {
