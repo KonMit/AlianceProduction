@@ -8,6 +8,7 @@
   margin: 0;
 }
 .header {
+  padding-top: 94px;
   position: relative;
   background: url("../img/header-bg.png");
   background-size: cover;
@@ -17,8 +18,7 @@
 .header__container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .header::before {
   content: "";
@@ -30,12 +30,15 @@
   left: 0;
   z-index: 0;
 }
+.header__separator {
+  margin-top: 6px;
+}
 .header__content {
   position: relative;
-  padding: 150px 0px 100px 0px;
+  padding: 143px 0px 100px 0px;
 }
 .header__content-title {
-  margin: 30px 0;
+  margin: 24px 0 40px 0px;
   max-width: 1080px;
   font-size: 80px;
   flex-shrink: 0;
@@ -47,8 +50,9 @@
   margin-bottom: 50px;
 }
 .header__content-button {
-  padding: 25px 60px;
+  padding: 25px 64px;
 }
+
 .header__features-list {
   position: relative;
   display: flex;
@@ -58,8 +62,9 @@
 .header__features-item {
   border: 1px solid rgba(235, 235, 240, 0.2);
   border-bottom: none;
-  padding: 30px 50px;
-  max-height: 168px;
+  padding: 27px 49px 34px 49px;
+  width: 288px;
+  height: 168px;
 }
 .header__features-item:not(:last-child) {
   border-right: none;
@@ -67,9 +72,10 @@
 .header__features-img {
   width: 36px;
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 .header__features-text {
+  max-width: 188px;
   font-weight: 400;
   line-height: 160%;
 }
@@ -146,7 +152,7 @@
   transition: all 0.2s;
 }
 .navbar_light .navbar__button {
-  padding: 25px 50px;
+  padding: 25px 48px;
 }
 .procedure {
   padding: 150px 0;
@@ -154,29 +160,28 @@
 
 .procedure__title {
   color: #292d33;
-  margin-top: 50px;
+  margin-top: 26px;
 }
 .procedure__list {
-  margin-top: 50px;
+  margin-top: 51px;
 }
 .steps {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .steps__item {
-  max-width: 330px;
+  width: 330px;
 }
 .steps__num {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   font-family: "Bebas Neue";
   color: #5c8ee5;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  margin-bottom: 50px;
 }
 
 .steps__num::after {
@@ -184,7 +189,6 @@
   display: inline-block;
   width: 100%;
   height: 1px;
-  margin-left: 30px;
   background-color: #ebebf0;
 }
 .steps__title {
@@ -197,6 +201,7 @@
   margin-bottom: 20px;
   font-weight: 400;
   line-height: 160%;
+  max-width: 300px;
 }
 .steps__link {
   font-family: "Noto Sans";
