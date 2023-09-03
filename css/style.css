@@ -470,7 +470,11 @@
 }
 @media (max-width: 580px) {
   .header__content-title {
-    font-size: 3rem;
+    font-size: 5rem;
+  }
+  .header__content-button {
+    width: 100%;
+    padding: 20px 88px;
   }
   .header__content {
     padding: 7rem 0rem 6.25rem 0rem;
