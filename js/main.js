@@ -35,3 +35,28 @@ navbarBurger.addEventListener("click", (e) => {
     }
   }
 });
+
+const swiper = new Swiper(".swiper", {
+  speed: 400,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".header__slide-button-next",
+    prevEl: ".header__slide-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    370: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});

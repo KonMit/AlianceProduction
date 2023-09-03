@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/global.css" />
@@ -135,38 +136,56 @@
             </p>
             <button class="header__content-button button" type="button">Подробнее о компании</button>
           </div>
-          <ul class="header__features-list">
-            <li class="header__features-item">
-              <svg class="icon header__features-img" width="36" height="36">
-                <use href="img/sprite.svg#hour"></use>
-              </svg>
-              <p class="header__features-text">Непрерывная работа c&nbsp;2017 года</p>
-            </li>
-            <li class="header__features-item">
-              <svg class="icon header__features-img" width="36" height="36">
-                <use href="img/sprite.svg#certificate"></use>
-              </svg>
-              <p class="header__features-text">Вся продукция сертифицирована</p>
-            </li>
-            <li class="header__features-item">
-              <svg class="icon header__features-img" width="36" height="36">
-                <use href="img/sprite.svg#control"></use>
-              </svg>
-              <p class="header__features-text">Контроль качества на&nbsp;всех этапах</p>
-            </li>
-            <li class="header__features-item">
-              <svg class="icon header__features-img" width="36" height="36">
-                <use href="img/sprite.svg#delivery"></use>
-              </svg>
-              <p class="header__features-text">Возможны поставки по&nbsp;всей России</p>
-            </li>
-            <li class="header__features-item">
-              <svg class="icon header__features-img" width="36" height="36">
-                <use href="img/sprite.svg#speed"></use>
-              </svg>
-              <p class="header__features-text">Оперативное производство</p>
-            </li>
-          </ul>
+          <div class="swiper header__slider">
+            <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper header__features-list">
+              <!-- Slides -->
+              <li class="swiper-slide header__features-item">
+                <svg class="icon header__features-img" width="36" height="36">
+                  <use href="img/sprite.svg#hour"></use>
+                </svg>
+                <p class="header__features-text">Непрерывная работа c&nbsp;2017 года</p>
+              </li>
+              <li class="swiper-slide header__features-item">
+                <svg class="icon header__features-img" width="36" height="36">
+                  <use href="img/sprite.svg#certificate"></use>
+                </svg>
+                <p class="header__features-text">Вся продукция сертифицирована</p>
+              </li>
+              <li class="swiper-slide header__features-item">
+                <svg class="icon header__features-img" width="36" height="36">
+                  <use href="img/sprite.svg#control"></use>
+                </svg>
+                <p class="header__features-text">Контроль качества на&nbsp;всех этапах</p>
+              </li>
+              <li class="swiper-slide header__features-item">
+                <svg class="icon header__features-img" width="36" height="36">
+                  <use href="img/sprite.svg#delivery"></use>
+                </svg>
+                <p class="header__features-text">Возможны поставки по&nbsp;всей России</p>
+              </li>
+              <li class="swiper-slide header__features-item">
+                <svg class="icon header__features-img" width="36" height="36">
+                  <use href="img/sprite.svg#speed"></use>
+                </svg>
+                <p class="header__features-text">Оперативное производство</p>
+              </li>
+            </ul>
+
+            <!-- If we need navigation buttons -->
+            <div class="header__slides-buttons">
+              <div class="header__slide-button-prev">
+                <svg class="icon" width="36" height="24">
+                  <use href="img/sprite.svg#arrow-prev"></use>
+                </svg>
+              </div>
+              <div class="header__slide-button-next">
+                <svg class="icon" width="36" height="24">
+                  <use href="img/sprite.svg#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
       <section class="procedure container">
@@ -199,6 +218,7 @@
         </ol>
       </section>
     </div>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
