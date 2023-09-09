@@ -36,7 +36,7 @@ navbarBurger.addEventListener("click", (e) => {
   }
 });
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".header__slider", {
   speed: 400,
   slidesPerView: 1,
   navigation: {
@@ -44,11 +44,9 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".header__slide-button-prev",
   },
   breakpoints: {
-    // when window width is >= 320px
     370: {
       slidesPerView: 2,
     },
-    // when window width is >= 640px
     640: {
       slidesPerView: 3,
     },
@@ -57,6 +55,22 @@ const swiper = new Swiper(".swiper", {
     },
     1200: {
       slidesPerView: 5,
+    },
+  },
+});
+
+const swiperProcedure = new Swiper(".procedure__slider", {
+  speed: 400,
+  slidesPerView: 1.18,
+  breakpoints: {
+    560: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    800: {
+      slidesPerView: 4,
     },
   },
 });

@@ -246,12 +246,18 @@
 .procedure__list {
   margin-top: 3.1875rem;
 }
+.procedure__slider {
+  width: 100%;
+}
 .steps {
   display: flex;
-  gap: 1.875rem;
+  justify-content: space-between;
+  gap: 30px;
 }
 .steps__item {
-  width: 20.625rem;
+  position: relative;
+  /* max-width: 20.625rem !important; */
+  overflow: hidden;
 }
 .steps__num {
   display: flex;
@@ -268,6 +274,8 @@
   content: "";
   display: inline-block;
   width: 100%;
+  max-width: 260px;
+  margin-left: 30px;
   height: 1px;
   background-color: #ebebf0;
 }
@@ -306,7 +314,7 @@
   visibility: hidden;
   z-index: 100;
   background: #fafbfc;
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   margin-left: -100vw;
   padding: 30px 15px 15px 15px;
@@ -314,6 +322,7 @@
 }
 .mobile-menu.isOpen {
   visibility: visible;
+  overflow-y: scroll;
   margin-left: 0;
   transition: all 0.2s;
 }
@@ -469,6 +478,12 @@
   }
 }
 @media (max-width: 580px) {
+  .container {
+    padding: 0 0.9375rem;
+  }
+  .procedure {
+    padding: 9.375rem 0.9375rem;
+  }
   .header__content-title {
     font-size: 5rem;
   }
@@ -495,5 +510,24 @@
   .navbar__button-icon {
     display: flex;
     color: white;
+  }
+  .steps {
+    display: flex;
+    justify-content: start;
+    gap: 3px;
+    padding: 0;
+  }
+  .steps__num::after {
+    max-width: 230px;
+  }
+  .procedure__list {
+  }
+  .steps__item {
+    /* max-width: 300px !important;
+    width: 300px !important; */
+  }
+  .steps__text {
+    font-size: 14px;
+    max-width: 100%;
   }
 }
