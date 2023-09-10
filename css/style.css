@@ -539,7 +539,7 @@
   .steps {
     display: flex;
     justify-content: start;
-    gap: 3px;
+    gap: 0;
     padding: 0;
   }
   .steps__num::after {

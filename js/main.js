@@ -61,7 +61,8 @@ const swiper = new Swiper(".header__slider", {
 
 const swiperProcedure = new Swiper(".procedure__slider", {
   speed: 400,
-  slidesPerView: 1.18,
+  slidesPerView: 1.26,
+  spaceBetween: 30,
   navigation: {
     nextEl: ".procedure__slide-button-next",
     prevEl: ".procedure__slide-button-prev",
