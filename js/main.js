@@ -62,14 +62,18 @@ const swiper = new Swiper(".header__slider", {
 const swiperProcedure = new Swiper(".procedure__slider", {
   speed: 400,
   slidesPerView: 1.18,
+  navigation: {
+    nextEl: ".procedure__slide-button-next",
+    prevEl: ".procedure__slide-button-prev",
+  },
   breakpoints: {
     560: {
       slidesPerView: 2,
     },
-    640: {
+    750: {
       slidesPerView: 3,
     },
-    800: {
+    1000: {
       slidesPerView: 4,
     },
   },
