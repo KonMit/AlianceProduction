@@ -462,12 +462,20 @@
   flex-basis: 33%;
   border: 1px solid #ebebf0;
   min-height: 37.0625rem;
+  transition: border 0.2s;
+}
+.production__card:hover {
+  border-color: #5c8ee5;
 }
 .production__content {
   padding: 2.5rem 3.125rem 5rem 3.125rem;
 }
 .production__card-title {
   color: #292d33;
+  transition: color 0.2s;
+}
+.production__card:hover .production__card-title {
+  color: #5c8ee5;
 }
 .production__text {
   color: #828a99;
