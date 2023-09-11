@@ -477,12 +477,15 @@
 .production__card-title {
   color: #292d33;
   transition: color 0.2s;
+  line-height: 110%;
+  margin-bottom: 0.625rem;
 }
 .production__card:hover .production__card-title {
   color: #5c8ee5;
 }
 .production__text {
   color: #828a99;
+  line-height: 120%;
 }
 .production__image {
   width: 100%;
