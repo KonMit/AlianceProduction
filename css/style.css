@@ -423,7 +423,39 @@
   margin-top: 21px;
   gap: 15px;
 }
-.mobile-menu__social-link {
+.production {
+  padding-bottom: 9.375rem;
+}
+.production__container {
+}
+.production__title {
+  color: #292d33;
+  margin: 1.875rem 0rem 3.125rem 0rem;
+}
+.production__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.production__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  height: 37.0625rem;
+}
+.production__content {
+  padding: 2.5rem 3.125rem 5rem 3.125rem;
+}
+.production__card-title {
+  color: #292d33;
+}
+.production__text {
+  color: #828a99;
+}
+.production__image {
+  width: 100%;
+  height: 18.75rem;
 }
 
 @media (max-width: 1750px) {
