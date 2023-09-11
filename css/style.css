@@ -504,6 +504,7 @@
 .mark__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .mark__item {
   display: flex;
@@ -522,6 +523,7 @@
   width: 11.25rem !important;
   height: 11.25rem !important;
   transition: all 0.2s;
+  flex-shrink: 0;
 }
 .mark__item:hover .mark__svg {
   fill: #5c8ee5;
@@ -532,6 +534,10 @@
   color: #292d33;
   transition: color 0.2s;
 }
+.mark__list-title-mobile {
+  display: none;
+  visibility: hidden;
+}
 .mark__item:hover .mark__list-title {
   color: #5c8ee5;
 }
@@ -540,6 +546,10 @@
   line-height: 160%;
   max-width: 22.5rem;
   color: #828a99;
+}
+.mark__text_mobile {
+  display: none;
+  visibility: hidden;
 }
 @media (max-width: 1750px) {
   html {
@@ -629,6 +639,21 @@
     font-size: 4rem;
   }
 }
+@media (max-width: 900px) {
+  .header__content-title {
+    font-size: 4rem;
+  }
+  .mark__list {
+  }
+  .mark__item {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  .mark__text {
+    max-width: none;
+  }
+}
+
 @media (max-width: 580px) {
   .container {
     padding: 0 1.3rem;
@@ -652,7 +677,6 @@
   .header__content {
     padding: 50px 0rem 6.25rem 0rem;
   }
-
   .navbar__logo {
     height: content;
     padding: 15px 48px 23px 48px !important;
@@ -703,6 +727,33 @@
   .production__card {
     flex-basis: 100%;
     min-height: 40rem;
+  }
+}
+@media (max-width: 480px) {
+  .mark__item {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mark__img-block {
+    display: flex;
+    gap: 30px;
+  }
+  .mark__list-title {
+    display: none;
+    visibility: hidden;
+  }
+  .mark__list-title-mobile {
+    display: inline-flex;
+    visibility: visible;
+  }
+  .mark__text {
+    display: none;
+    visibility: hidden;
+  }
+  .mark__text_mobile {
+    display: block;
+    visibility: visible;
   }
 }
 @media (max-width: 376px) {
