@@ -200,7 +200,7 @@
 .navbar__button {
   flex-shrink: 0;
   height: 100%;
-  padding: 2.1875rem 3.125rem;
+  padding: 2.1875rem 4rem 2.1875rem 3.125rem;
   transition: all 0.2s;
 }
 .navbar__button-text {
@@ -211,7 +211,7 @@
   display: none;
 }
 .navbar_light .navbar__button {
-  padding: 1.5625rem 3rem;
+  padding: 1.5625rem 4rem 1.5625rem 3rem;
 }
 .navbar__burger {
   display: none;

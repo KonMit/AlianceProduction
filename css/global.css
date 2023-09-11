@@ -20,6 +20,11 @@ body {
   background: #5c8ee5;
   height: 100%;
 }
+
+.button:hover {
+  background: #3a71d1;
+  transition: background 0.2s;
+}
 .separator {
   width: 9.375rem;
   height: 2px;
