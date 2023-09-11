@@ -343,6 +343,10 @@
   background-color: #5c8ee5;
   height: 1px;
   width: 2.5rem;
+  transition: width 0.2s;
+}
+.steps__link:hover:before {
+  width: 3.75rem;
 }
 .mobile-menu {
   position: fixed;
