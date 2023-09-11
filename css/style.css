@@ -270,11 +270,10 @@
 }
 .steps {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 .steps__item {
   position: relative;
-  width: 330px !important;
 }
 .steps__num {
   display: flex;
