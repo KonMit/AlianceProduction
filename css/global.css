@@ -7,7 +7,7 @@ body {
   max-width: 100vw;
 }
 .container {
-  max-width: 90rem;
+  max-width: 89rem;
   margin: 0 auto;
 }
 .button {
@@ -21,7 +21,7 @@ body {
   height: 100%;
 }
 .separator {
-  width: 150px;
+  width: 9.375rem;
   height: 2px;
   flex-shrink: 0;
   background: #5c8ee5;
