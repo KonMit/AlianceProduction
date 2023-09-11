@@ -512,15 +512,28 @@
   flex-basis: 50%;
   padding: 3.125rem;
   border: 1px solid #ebebf0;
+  transition: border 0.2s;
+}
+.mark__item:hover {
+  border-color: #5c8ee5;
 }
 .mark__svg {
+  fill: #828a99;
   width: 11.25rem !important;
   height: 11.25rem !important;
+  transition: all 0.2s;
+}
+.mark__item:hover .mark__svg {
+  fill: #5c8ee5;
 }
 .mark__content {
 }
 .mark__list-title {
   color: #292d33;
+  transition: color 0.2s;
+}
+.mark__item:hover .mark__list-title {
+  color: #5c8ee5;
 }
 .mark__text {
   font-size: 1rem;
