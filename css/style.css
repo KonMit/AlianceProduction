@@ -491,7 +491,43 @@
   width: 100%;
   /* height: 18.75rem; */
 }
-
+.mark {
+  padding-bottom: 9.375rem;
+}
+.mark__container {
+}
+.mark__title {
+  color: #292d33;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+.mark__list {
+  display: flex;
+  justify-content: space-between;
+}
+.mark__item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-basis: 50%;
+  padding: 3.125rem;
+  border: 1px solid #ebebf0;
+}
+.mark__svg {
+  width: 11.25rem !important;
+  height: 11.25rem !important;
+}
+.mark__content {
+}
+.mark__list-title {
+  color: #292d33;
+}
+.mark__text {
+  font-size: 1rem;
+  line-height: 160%;
+  max-width: 22.5rem;
+  color: #828a99;
+}
 @media (max-width: 1750px) {
   html {
     font-size: 14px !important;
