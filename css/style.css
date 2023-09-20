@@ -502,15 +502,14 @@
   margin-bottom: 3.125rem;
 }
 .mark__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
 }
 .mark__item {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  flex-basis: 50%;
+  display: grid;
+  grid-template-areas: "svg title title" "svg text text";
+  /* column-gap: 50px; */
   padding: 3.125rem;
   border: 1px solid #ebebf0;
   transition: border 0.2s;
@@ -519,11 +518,13 @@
   border-color: #5c8ee5;
 }
 .mark__svg {
+  margin-right: 50px;
   fill: #828a99;
   width: 11.25rem !important;
   height: 11.25rem !important;
   transition: all 0.2s;
   flex-shrink: 0;
+  grid-area: svg;
 }
 .mark__item:hover .mark__svg {
   fill: #5c8ee5;
@@ -533,10 +534,7 @@
 .mark__list-title {
   color: #292d33;
   transition: color 0.2s;
-}
-.mark__list-title-mobile {
-  display: none;
-  visibility: hidden;
+  grid-area: title;
 }
 .mark__item:hover .mark__list-title {
   color: #5c8ee5;
@@ -546,10 +544,7 @@
   line-height: 160%;
   max-width: 22.5rem;
   color: #828a99;
-}
-.mark__text_mobile {
-  display: none;
-  visibility: hidden;
+  grid-area: text;
 }
 @media (max-width: 1750px) {
   html {
@@ -626,6 +621,21 @@
     gap: 0;
   }
 }
+@media (max-width: 968px) {
+  .header__content-title {
+    font-size: 4rem;
+  }
+  .mark__list {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+  .mark__item {
+  }
+  .mark__text {
+    max-width: none;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar__phone {
     display: none;
@@ -637,20 +647,6 @@
 @media (max-width: 720px) {
   .header__content-title {
     font-size: 4rem;
-  }
-}
-@media (max-width: 900px) {
-  .header__content-title {
-    font-size: 4rem;
-  }
-  .mark__list {
-  }
-  .mark__item {
-    justify-content: center;
-    flex-basis: 100%;
-  }
-  .mark__text {
-    max-width: none;
   }
 }
 
@@ -731,29 +727,15 @@
 }
 @media (max-width: 480px) {
   .mark__item {
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    grid-template-areas:
+      "svg title title title"
+      "text text text text";
   }
-  .mark__img-block {
-    display: flex;
-    gap: 30px;
-  }
-  .mark__list-title {
-    display: none;
-    visibility: hidden;
-  }
-  .mark__list-title-mobile {
-    display: inline-flex;
-    visibility: visible;
-  }
-  .mark__text {
-    display: none;
-    visibility: hidden;
-  }
-  .mark__text_mobile {
-    display: block;
-    visibility: visible;
+  .mark__svg {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 376px) {
