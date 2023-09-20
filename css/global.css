@@ -44,3 +44,25 @@ body {
   font-size: 1.75rem;
   line-height: 160%;
 }
+
+.button-link {
+  font-family: "Noto Sans";
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #5c8ee5;
+}
+.button-link::before {
+  content: "";
+  background-color: #5c8ee5;
+  height: 1px;
+  width: 2.5rem;
+  transition: width 0.2s;
+}
+.button-link:hover:before {
+  width: 3.75rem;
+}
