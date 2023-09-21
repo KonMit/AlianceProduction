@@ -44,7 +44,6 @@ body {
   font-size: 1.75rem;
   line-height: 160%;
 }
-
 .button-link {
   font-family: "Noto Sans";
   display: flex;
@@ -65,4 +64,19 @@ body {
 }
 .button-link:hover:before {
   width: 3.75rem;
+}
+.slide-buttons_primary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.slide-button-prev_primary,
+.slide-button-next_primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5c8ee5;
+  width: 60px;
+  height: 40px;
+  flex-shrink: 0;
 }

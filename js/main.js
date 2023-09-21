@@ -79,3 +79,18 @@ const swiperProcedure = new Swiper(".procedure__slider", {
     },
   },
 });
+
+const swiperBlog = new Swiper(".blog__slider", {
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".blog__slide-button-prev",
+    prevEl: ".blog__slide-button-next",
+  },
+  breakpoints: {
+    998: {
+      slidesPerView: 2,
+    },
+  },
+});
