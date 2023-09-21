@@ -85,8 +85,8 @@ const swiperBlog = new Swiper(".blog__slider", {
   slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
-    nextEl: ".blog__slide-button-prev",
-    prevEl: ".blog__slide-button-next",
+    nextEl: ".blog__slide-button-next",
+    prevEl: ".blog__slide-button-prev",
   },
   breakpoints: {
     998: {
