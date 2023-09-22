@@ -35,7 +35,8 @@ navbarBurger.addEventListener("click", (e) => {
     }
   }
 });
-
+// ===
+// === header-slider ===
 const swiper = new Swiper(".header__slider", {
   speed: 400,
   slidesPerView: 1,
@@ -58,7 +59,9 @@ const swiper = new Swiper(".header__slider", {
     },
   },
 });
-
+// === header-slider ===
+// ===
+// === procedure-slider ===
 const swiperProcedure = new Swiper(".procedure__slider", {
   speed: 400,
   slidesPerView: 1.26,
@@ -79,7 +82,9 @@ const swiperProcedure = new Swiper(".procedure__slider", {
     },
   },
 });
-
+// === procedure-slider ===
+// ===
+// === blog-slider ===
 const swiperBlog = new Swiper(".blog__slider", {
   speed: 400,
   slidesPerView: 1,
@@ -93,4 +98,18 @@ const swiperBlog = new Swiper(".blog__slider", {
       slidesPerView: 2,
     },
   },
+});
+// === blog-slider ===
+// ===
+// === modal scripts ===
+const modal = document.querySelector(".modal");
+const modalOpenBtn = document.querySelectorAll("[data-toggle=modal]");
+const modalCloseBtn = document.querySelector(".modal__close-btn");
+modalOpenBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    modal.classList.add("isOpen");
+  });
+});
+modalCloseBtn.addEventListener("click", () => {
+  modal.classList.remove("isOpen");
 });

@@ -136,7 +136,7 @@
             </svg>
             <span class="navbar__phone-text">+7 (499) 686-10-14</span>
           </a>
-          <button class="navbar__button button" type="button">
+          <button class="navbar__button button" type="button" data-toggle="modal">
             <span class="navbar__button-text">Получить консультацию</span>
             <svg class="icon navbar__button-icon" width="24" height="24">
               <use href="img/sprite.svg#phone-light"></use>
@@ -156,7 +156,7 @@
               доказательством простого факта: высококачественный прототип будущего проекта напрямую
               зависит от анализа существующих паттернов поведения.
             </p>
-            <button class="header__content-button button" type="button">
+            <button class="header__content-button button" type="button" data-toggle="modal">
               Подробнее о компании
             </button>
           </div>
@@ -709,6 +709,56 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__container">
+        <form action="#" class="modal__form cta__content">
+          <div class="modal__top">
+            <h2 class="modal__title cta__title title title_h2">Есть вопросы?</h2>
+            <button class="modal__close-btn" type="button">
+              <svg class="modal__close-svg" width="24" height="24">
+                <use href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="modal__description cta__description">
+            Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все
+            интересующие вопросы и поможем даже в самых сложных случаях!
+          </p>
+          <div class="modal__inputs cta__inputs">
+            <div class="modal__input-group cta__input-group">
+              <input
+                class="modal__input cta__input input"
+                id="modal-user-name"
+                type="text"
+                placeholder="Имя"
+              />
+              <label for="modal-user-name" class="modal__label cta__label">Имя</label>
+            </div>
+            <div class="modal__input-group cta__input-group">
+              <input
+                class="modal__input cta__input input"
+                id="modal-user-phone"
+                type="text"
+                placeholder="Номер телефона"
+              />
+              <label for="modal-user-phone" class="modal__label cta__label">Номер телефона</label>
+            </div>
+          </div>
+          <div class="modal__button-group cta__button-group">
+            <button class="button modal__button cta__button" type="submit">Отправить заявку</button>
+            <div class="modal__notify-group cta__notify-group">
+              <svg class="modal__notify-img cta__notify-img" width="14" height="14">
+                <use href="img/sprite.svg#shield"></use>
+              </svg>
+              <p class="modal__notify-text cta__notify-text">
+                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную
+                конфиденциальность информации!
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

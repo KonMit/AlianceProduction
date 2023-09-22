@@ -772,7 +772,7 @@
 .cta__label {
   cursor: text;
   transform: scale(0);
-  top: -0.6rem;
+  top: -0.7rem;
   left: 1.875rem;
   position: absolute;
   color: #828a99;
@@ -965,6 +965,86 @@
 .made-in__svg {
   width: 52px;
   height: 11px;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  background: rgba(41, 45, 51, 0.5);
+  transition: all 0.2s;
+}
+.modal.isOpen {
+  opacity: 1;
+  visibility: visible;
+}
+.modal__container {
+  transform: translateY(-10%);
+  max-width: 28.75rem;
+  background: #fafbfc;
+  transition: transform 0.2s;
+}
+.modal__form {
+  padding: 2.5rem 3.125rem;
+}
+
+.modal.isOpen .modal__container {
+  transform: translateY(0);
+}
+.modal__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  gap: 4.375rem;
+}
+.modal__title {
+  margin: 0;
+  font-size: 3rem;
+}
+.modal__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid #ebebf0;
+}
+.modal__close-svg {
+}
+.modal__description {
+  margin-bottom: 1.875rem;
+}
+.modal__inputs {
+  flex-direction: column;
+}
+.modal__input-group {
+  width: 100%;
+}
+.modal__input {
+}
+.modal__label {
+  top: -0.7rem;
+  background-color: #fafbfc;
+}
+.modal__button-group {
+  display: flex;
+  flex-direction: column;
+}
+.modal__button {
+  width: 100%;
+}
+.modal__notify-group {
+}
+.modal__notify-img {
+}
+.modal__notify-text {
 }
 @media (max-width: 1750px) {
   html {
