@@ -142,7 +142,7 @@
   height: 2.75rem;
 }
 .logo-light {
-  display: block;
+  display: flex;
 }
 .logo-dark {
   display: none;
@@ -151,7 +151,7 @@
   display: none;
 }
 .navbar_light .logo-dark {
-  display: block;
+  display: flex;
 }
 .navbar_light .navbar__logo {
   border-right: 1px solid rgba(235, 235, 240, 1);
@@ -1138,6 +1138,18 @@
     display: flex;
     justify-content: center;
     flex-grow: 7;
+  }
+  .logo-light {
+    display: flex;
+  }
+  .logo-dark {
+    display: none;
+  }
+  .navbar_light .logo-light {
+    display: none;
+  }
+  .navbar_light .logo-dark {
+    display: flex;
   }
   .navbar__phone {
     margin-left: 3rem;

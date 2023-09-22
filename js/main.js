@@ -16,7 +16,6 @@ navbarBurger.addEventListener("click", (e) => {
   if (!mobileMenu.classList.contains("isOpen")) {
     navbar.classList.add("navbar_light");
     navbar.classList.add("isOpen");
-    navbarLogoSvg.href.baseVal = "img/sprite.svg#logo-dark";
     mobileMenu.classList.add("isOpen");
     document.body.style.overflow = "hidden";
   } else {
@@ -26,10 +25,11 @@ navbarBurger.addEventListener("click", (e) => {
       document.body.style.overflow = "visible";
     } else {
       mobileMenu.classList.remove("isOpen");
-      navbar.classList.remove("navbar_light");
       navbar.classList.remove("isOpen");
-      navbarLogoSvg.href.baseVal = "img/sprite.svg#logo-light";
       document.body.style.overflow = "visible";
+      if (isFront) {
+        navbar.classList.remove("navbar_light");
+      }
     }
   }
 });
