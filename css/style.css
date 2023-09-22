@@ -636,7 +636,6 @@
   height: 4.375rem;
 }
 .blog {
-  padding-bottom: 14rem;
 }
 .blog__container {
 }
@@ -702,8 +701,11 @@
 .blog__slide-button-next {
 }
 .cta {
-  background: #f0f2f5;
   position: relative;
+  padding-top: 14rem;
+}
+.cta__wrapper {
+  background: #f0f2f5;
 }
 .cta__container {
   display: flex;
