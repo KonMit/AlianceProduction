@@ -141,6 +141,18 @@
   width: 8.75rem;
   height: 2.75rem;
 }
+.logo-light {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+.navbar_light .logo-light {
+  display: none;
+}
+.navbar_light .logo-dark {
+  display: block;
+}
 .navbar_light .navbar__logo {
   border-right: 1px solid rgba(235, 235, 240, 1);
   padding: 0.9375rem 3.125rem;
