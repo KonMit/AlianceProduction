@@ -6,8 +6,14 @@ const isFront = document.querySelector(".front-page");
 window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
     navbar.classList.add("navbar_light");
-  } else if (isFront) {
-    navbar.classList.remove("navbar_light");
+    navbar.classList.add("isScroll");
+    navbar.style.height = "4.625rem";
+  } else {
+    navbar.classList.remove("isScroll");
+    navbar.style.height = "5.875rem";
+    if (isFront) {
+      navbar.classList.remove("navbar_light");
+    }
   }
 });
 

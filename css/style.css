@@ -124,7 +124,6 @@
 }
 .navbar_light {
   position: fixed;
-  height: 4.625rem;
   color: #292d33;
   background: #fafbfc;
   border-bottom: 1px solid rgba(235, 235, 240, 1);
@@ -222,7 +221,7 @@
 .navbar__button-icon {
   display: none;
 }
-.navbar_light .navbar__button {
+.isScroll .navbar__button {
   padding: 1.5625rem 4rem 1.5625rem 3rem;
 }
 .navbar__burger {
