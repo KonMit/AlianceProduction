@@ -104,25 +104,19 @@ const swiperBlog = new Swiper(".blog__slider", {
 // === modal scripts ===
 const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal__container");
-const modalOpenBtn = document.querySelectorAll("[data-toggle=modal]");
-const modalCloseBtn = document.querySelector(".modal__close-btn");
-modalOpenBtn.forEach((element) => {
-  element.addEventListener("click", () => {
-    modal.classList.add("isOpen");
 
-    modal.addEventListener("click", (event) => {
-      if (event.target === modal) {
-        modal.classList.remove("isOpen");
-      }
-    });
-    document.addEventListener("keyup", (event) => {
-      if (event.code === "Escape") {
-        modal.classList.remove("isOpen");
-      }
-    });
-  });
+document.addEventListener("click", () => {
+  if (
+    event.target.dataset.toggle == "modal" ||
+    event.target.parentNode.dataset.toggle == "modal" ||
+    (event.target === modal && modal.classList.contains("isOpen"))
+  ) {
+    modal.classList.toggle("isOpen");
+  }
 });
-modalCloseBtn.addEventListener("click", () => {
-  modal.classList.remove("isOpen");
+document.addEventListener("keyup", (event) => {
+  if (event.code === "Escape" && modal.classList.contains("isOpen")) {
+    modal.classList.toggle("isOpen");
+  }
 });
 // === modal scripts ===
