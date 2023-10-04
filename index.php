@@ -702,7 +702,7 @@
           <div class="footer__bottom">
             <div class="footer__bottom-left">
               <span class="footer__copyright">
-                &copy; 2023 «Aliance Production». Все права защищены.
+                &copy; <?php echo date("Y")?> «Aliance Production». Все права защищены.
               </span>
               <a href="#" class="footer__policy">Политики конфиденциальности</a>
             </div>
@@ -717,7 +717,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal">
+    <div class="modal"></div>
       <div class="modal__container">
         <form action="#" class="modal__form cta__content">
           <div class="modal__top">
