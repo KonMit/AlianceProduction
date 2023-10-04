@@ -1,6 +1,12 @@
 html {
   font-size: 16px;
 }
+:root {
+  --white: #ffffff;
+  --dark: #292d33;
+  --gray: #828a99;
+  --bg-inside: #f0f2f5;
+}
 body {
 }
 .wrapper {
