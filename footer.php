@@ -10,8 +10,7 @@
             </p>
             <div class="cta__inputs">
                 <div class="cta__input-group">
-                <input 
-                    for
+                <input
                     class="cta__input input _req" 
                     id="username" type="text" 
                     name="name" 

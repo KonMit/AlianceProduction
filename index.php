@@ -586,7 +586,7 @@
       <?php include_once('footer.php');?>
       <div class="modal">
         <div class="modal__container">
-          <form action="handler.php" mathod="POST" class="modal__form cta__content cta-form">
+          <form action="handler.php" method="POST" class="modal__form cta__content cta-form">
             <div class="modal__top">
               <h2 class="modal__title cta__title title title_h2">Есть вопросы?</h2>
               <button class="modal__close-btn" type="button" data-toggle="modal">
