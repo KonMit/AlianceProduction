@@ -15,6 +15,8 @@
                 id="username" type="text" 
                 name="username" 
                 placeholder="Имя"
+                maxLength="100"
+                required
             />
             <label for="username" class="cta__label">Имя</label>
             </div>
@@ -25,6 +27,9 @@
                 type="text"
                 name="userphone"
                 placeholder="Номер телефона"
+                maxLength="20"
+                required
+                pattern="^(\+7|7|8) ?\(?[0-9]{3}\)?[-| ]?[0-9]{3}[-| ]?[0-9]{2}[-| ]?[0-9]{2}$"
             />
             <label for="userphone" class="cta__label">Номер телефона</label>
             </div>
