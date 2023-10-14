@@ -764,6 +764,20 @@
   transition: all 0.2s;
   background: transparent;
 }
+.isInvalid._req.cta__input {
+  position: relative;
+  border: 1px solid #c63131 !important;
+  transition: all 0.3s;
+  box-shadow: 0px 0 3px #c63131;
+}
+/* .isInvalid::before {
+  content: "Заполните поле";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+} */
 .cta__input:focus {
   border: 1px solid #5c8ee5;
   outline: 0;
@@ -798,13 +812,19 @@
   background: #f0f2f5;
   transition: all 0.2s;
 }
+
 .cta__input:focus ~ .cta__label {
   transform: scale(1);
 }
 .cta__input:not(:placeholder-shown) ~ .cta__label {
   transform: scale(1);
 }
-
+.cta__label_error {
+  transform: scale(1) !important;
+  z-index: 100;
+  left: auto;
+  right: 1.875rem;
+}
 .cta__button-group {
   display: flex;
   align-items: center;

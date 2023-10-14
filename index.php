@@ -586,7 +586,7 @@
       <?php include_once('footer.php');?>
       <div class="modal">
         <div class="modal__container">
-          <form action="#" class="modal__form cta__content">
+          <form action="handler.php" mathod="POST" class="modal__form cta__content cta-form">
             <div class="modal__top">
               <h2 class="modal__title cta__title title title_h2">Есть вопросы?</h2>
               <button class="modal__close-btn" type="button" data-toggle="modal">
@@ -602,18 +602,21 @@
             <div class="modal__inputs cta__inputs">
               <div class="modal__input-group cta__input-group">
                 <input
-                  class="modal__input cta__input input"
+                  class="modal__input cta__input input _req"
                   id="modal-user-name"
                   type="text"
+                  name="name"
                   placeholder="Имя"
                 />
                 <label for="modal-user-name" class="modal__label cta__label">Имя</label>
               </div>
               <div class="modal__input-group cta__input-group">
                 <input
-                  class="modal__input cta__input input"
+                  class="modal__input cta__input input _req"
                   id="modal-user-phone"
-                  type="text"
+                  type="tel"
+                  name="phone"
+                  pattern="/^(\+7|7|8) ?\(?[0-9]{3}\)?[-| ]?[0-9]{3}[-| ]?[0-9]{2}[-| ]?[0-9]{2}$/v"
                   placeholder="Номер телефона"
                 />
                 <label for="modal-user-phone" class="modal__label cta__label">Номер телефона</label>

@@ -3,6 +3,111 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const navbarBurger = document.querySelector(".navbar__burger");
 const isFront = document.querySelector(".front-page");
 
+const ctaForm = document.querySelectorAll(".cta-form");
+const validateRegNumber =
+  /^(\+7|7|8) ?\(?[0-9]{3}\)?[-| ]?[0-9]{3}[-| ]?[0-9]{2}[-| ]?[0-9]{2}$/;
+const nameLength = 50;
+document.addEventListener("DOMContentLoaded", () => {
+  // === Отключение стандартной отправки формы ===
+  ctaForm.forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const inputsForm = form.querySelectorAll("input");
+
+      inputsForm.forEach((input) => {
+        input.addEventListener("input", (event) => {
+          event.target.parentElement.classList.remove("isInvalid");
+          event.target.classList.remove("isInvalid");
+
+          const labelError =
+            event.target.parentElement.querySelector(".cta__label_error");
+          if (labelError) {
+            labelError.remove();
+          }
+        });
+      });
+
+      if (!formValidate(form)) {
+        console.log("Запрос не может быть отправлен!");
+      } else {
+        sendForm(form);
+      }
+    });
+  });
+});
+
+//=== Проверка валидности формы ===
+function formValidate(form) {
+  const inputsFormReq = form.querySelectorAll("._req");
+  let error = 0;
+  let errorCheck = false;
+
+  inputsFormReq.forEach((input) => {
+    input.classList.remove("isInvalid");
+
+    if (input.hasAttribute("name") && input.getAttribute("name")) {
+      inputAttributeValue = input.getAttribute("name");
+      if (inputAttributeValue === "phone") {
+        const phoneChek = validateRegNumber.test(input.value);
+        if (!phoneChek) {
+          addLabelError(input);
+          input.parentElement.classList.add("isInvalid");
+          input.classList.add("isInvalid");
+          error++;
+        }
+      } else if (inputAttributeValue === "name") {
+        if (input.value === "") {
+          addLabelError(input);
+          input.parentElement.classList.add("isInvalid");
+          input.classList.add("isInvalid");
+          error++;
+        } else if (input.value.split("").length > nameLength) {
+          addLabelError(input);
+          input.parentElement.classList.add("isInvalid");
+          input.classList.add("isInvalid");
+          error++;
+        }
+      }
+    } else {
+      console.log("Аттрибута нет");
+    }
+  });
+
+  const inputsFormInvalid = form.querySelectorAll("input.isInvalid");
+  if (inputsFormInvalid.length != 0) {
+    inputsFormInvalid[0].focus();
+  }
+
+  if (error > 0) {
+    errorCheck = false;
+  } else {
+    errorCheck = true;
+  }
+  return errorCheck;
+}
+//=== Добавление label с ошибкой ===
+function addLabelError(input) {
+  input.parentElement.insertAdjacentHTML(
+    "afterbegin",
+    '<label for="username" class="cta__label cta__label_error">Введите корректное значение</label>'
+  );
+}
+
+//=== Отправка формы ===
+function sendForm(form) {
+  let formData = new FormData(form);
+  fetch(form.getAttribute("action"), {
+    method: form.getAttribute("method"),
+    body: formData,
+  }).then((response) => {
+    if (response.ok) {
+      // alert("Форма отправлена");
+    } else {
+      alert(response.statusText);
+    }
+  });
+}
+
 window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
     navbar.classList.add("navbar_light");
@@ -16,7 +121,6 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
 navbarBurger.addEventListener("click", (e) => {
   e.preventDefault();
   if (!mobileMenu.classList.contains("isOpen")) {
@@ -108,8 +212,7 @@ const swiperBlog = new Swiper(".blog__slider", {
 // === modal scripts ===
 const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal__container");
-
-document.addEventListener("click", () => {
+document.addEventListener("click", (event) => {
   if (
     event.target.dataset.toggle == "modal" ||
     event.target.parentNode.dataset.toggle == "modal" ||
@@ -124,3 +227,4 @@ document.addEventListener("keyup", (event) => {
   }
 });
 // === modal scripts ===
+// ===
