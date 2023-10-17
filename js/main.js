@@ -4,9 +4,7 @@ const navbarBurger = document.querySelector(".navbar__burger");
 const isFront = document.querySelector(".front-page");
 
 const ctaForm = document.querySelectorAll(".cta-form");
-const validateRegNumber =
-  /^(\+7|7|8) ?\(?[0-9]{3}\)?[-| ]?[0-9]{3}[-| ]?[0-9]{2}[-| ]?[0-9]{2}$/;
-const nameLength = 50;
+
 document.addEventListener("DOMContentLoaded", () => {
   // === Отключение стандартной отправки формы ===
   ctaForm.forEach((form) => {
@@ -37,18 +35,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //=== Проверка валидности формы ===
+const validateRegNumber =
+  /^(\+7|7|8) ?\(?[0-9]{3}\)?[-| ]?[0-9]{3}[-| ]?[0-9]{2}[-| ]?[0-9]{2}$/;
+const nameLength = 50;
+
 function formValidate(form) {
-  const inputsFormReq = form.querySelectorAll("._req");
+  const inputsFormReq = form.querySelectorAll("._req"); // получаем все инпуты, которые нужно проверять
+  // переменная для количества ошибок
   let error = 0;
+  // переменная для сохранения статуса проверки
   let errorCheck = false;
 
+  // перебираем все инпуты
   inputsFormReq.forEach((input) => {
-    input.classList.remove("isInvalid");
+    input.classList.remove("isInvalid"); // убираем статус не валидности, чтобы обнулить проверку и вернуть стили в исходное состояние
 
+    // проверяем есть аттрибут name и пустой ли он
     if (input.hasAttribute("name") && input.getAttribute("name")) {
+      //Если инпут не пустой получаем значени аттрибута name
       inputAttributeValue = input.getAttribute("name");
+      // Проверяем значения поля name, чтобы понять какое поле сейчас проходит валидацию
       if (inputAttributeValue === "phone") {
+        // Проверяем для телефона, проходит ли он по маске
         const phoneChek = validateRegNumber.test(input.value);
+        // Если phoneChek = false, то добавляем статус isInvalid инпуту, выводим label с указанием и увеличиваем счетчик ошибок на единицу
         if (!phoneChek) {
           addLabelError(input);
           input.parentElement.classList.add("isInvalid");
@@ -56,12 +66,16 @@ function formValidate(form) {
           error++;
         }
       } else if (inputAttributeValue === "name") {
+        // Проверяем для имени пустое ли значение
         if (input.value === "") {
+          // Если пустое, то добавляем статус isInvalid инпуту, выводим label с указанием и увеличиваем счетчик ошибок на единицу
           addLabelError(input);
           input.parentElement.classList.add("isInvalid");
           input.classList.add("isInvalid");
           error++;
+          // Если не пустое, то проверяем не больше ли оно необходимой длинны
         } else if (input.value.split("").length > nameLength) {
+          // Если больше, то добавляем статус isInvalid инпуту, выводим label с указанием и увеличиваем счетчик ошибок на единицу
           addLabelError(input);
           input.parentElement.classList.add("isInvalid");
           input.classList.add("isInvalid");
@@ -73,16 +87,20 @@ function formValidate(form) {
     }
   });
 
+  // Получаем массив всех не валидных инпутов
   const inputsFormInvalid = form.querySelectorAll("input.isInvalid");
+  // Проверяем, заполнен ли этот массив и если да, то фокусируем на первом элементе(инпуте)
   if (inputsFormInvalid.length != 0) {
     inputsFormInvalid[0].focus();
   }
 
+  // Проверяем счетчик ошибок
   if (error > 0) {
     errorCheck = false;
   } else {
     errorCheck = true;
   }
+  // Возвращаем результат выполнения функции
   return errorCheck;
 }
 //=== Добавление label с ошибкой ===
