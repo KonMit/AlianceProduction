@@ -101,7 +101,7 @@ function sendForm(form) {
     body: formData,
   }).then((response) => {
     if (response.ok) {
-      // alert("Форма отправлена");
+      form.reset();
     } else {
       alert(response.statusText);
     }
