@@ -20,7 +20,7 @@
                 </div>
                 <div class="cta__input-group">
                 <input
-                    class="cta__input input _req"
+                    class="cta__input input phone-mask _req"
                     id="userphone"
                     type="text"
                     name="phone"

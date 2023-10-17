@@ -612,7 +612,7 @@
               </div>
               <div class="modal__input-group cta__input-group">
                 <input
-                  class="modal__input cta__input input _req"
+                  class="modal__input cta__input input phone-mask _req"
                   id="modal-user-phone"
                   type="tel"
                   name="phone"
