@@ -636,7 +636,8 @@
             </div>
           </form>
         </div>
-      </div>     
+      </div>
+      <?php include_once('modal-thanks.html');?>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

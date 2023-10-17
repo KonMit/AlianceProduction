@@ -27,7 +27,6 @@ body {
   background: #5c8ee5;
   height: 100%;
 }
-
 .button:hover {
   background: #3a71d1;
   transition: background 0.2s;

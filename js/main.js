@@ -4,6 +4,8 @@ const navbarBurger = document.querySelector(".navbar__burger");
 const isFront = document.querySelector(".front-page");
 
 const ctaForm = document.querySelectorAll(".cta-form");
+const modal = document.querySelector(".modal");
+const thanksModal = document.querySelector(".modal-thanks");
 
 document.addEventListener("DOMContentLoaded", () => {
   // === Отключение стандартной отправки формы ===
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!formValidate(form)) {
         console.log("Запрос не может быть отправлен!");
       } else {
-        sendForm(form);
+        sendForm(form, thanksModal);
       }
     });
   });
@@ -112,7 +114,7 @@ function addLabelError(input) {
 }
 
 //=== Отправка формы ===
-function sendForm(form) {
+function sendForm(form, thanks) {
   let formData = new FormData(form);
   fetch(form.getAttribute("action"), {
     method: form.getAttribute("method"),
@@ -120,6 +122,8 @@ function sendForm(form) {
   }).then((response) => {
     if (response.ok) {
       form.reset();
+      thanks.classList.add("isOpen");
+      modal.classList.remove("isOpen");
     } else {
       alert(response.statusText);
     }
@@ -228,15 +232,22 @@ const swiperBlog = new Swiper(".blog__slider", {
 // === blog-slider ===
 // ===
 // === modal scripts ===
-const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal__container");
 document.addEventListener("click", (event) => {
   if (
+    // переключение модального окна c формой заявки
     event.target.dataset.toggle == "modal" ||
     event.target.parentNode.dataset.toggle == "modal" ||
     (event.target === modal && modal.classList.contains("isOpen"))
   ) {
     modal.classList.toggle("isOpen");
+  } else if (
+    // переключение модального окна после заявки
+    event.target.dataset.toggle == "modal-thanks" ||
+    event.target.parentNode.dataset.toggle == "modal-thanks" ||
+    (event.target === thanksModal && thanksModal.classList.contains("isOpen"))
+  ) {
+    thanksModal.classList.toggle("isOpen");
   }
 });
 document.addEventListener("keyup", (event) => {
