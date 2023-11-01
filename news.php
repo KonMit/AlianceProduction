@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>О компании - Aliance Production</title>
+    <title>Новости - Aliance Production</title>
 
     <link rel="shortcut icon" href="img/favicon-light.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,38 +23,9 @@
   <body>
     <div class="wrapper">
       <?php 
-      $page_title = "О компании";
-      $header_type = "";
+      $page_title = "Новости";
       include_once('./templates/header-page.php');
       ?>
-      <section class="founder">
-        <img class="founder__img" src="img/founder.jpg" alt="Founder" />
-        <div class="founder__container container">
-          <div class="founder__content">
-            <div class="separator"></div>
-            <h2 class="founder__title title title_h2">Отношение к делу и к клиентам</h2>
-            <div class="founder__text-block">
-              <p class="founder__text">
-                Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика
-                показывает, что укрепление и развитие внутренней структуры говорит о возможностях
-                соответствующих условий активизации. Внезапно, независимые государства, которые
-                представляют собой яркий пример континентально-европейского типа политической
-                культуры, будут подвергнуты целой серии независимых исследований. С учётом
-                сложившейся международной обстановки, синтетическое тестирование выявляет срочную
-                потребность системы массового участия.
-              </p>
-              <p class="founder__text">
-                А ещё действия представителей оппозиции, превозмогая сложившуюся непростую
-                экономическую ситуацию, в равной степени предоставлены сами себе. Не следует,
-                однако, забывать, что выбранный нами инновационный путь в значительной степени
-                обусловливает важность дальнейших направлений развития.
-              </p>
-            </div>
-            <a href="#" class="founder__button-link button-link">Подробнее о компании</a>
-          </div>
-        </div>
-      </section>
-      <?php include_once('./templates/clients.php');?>
       <?php include_once('./templates/footer.php');?>
     </div>
     <div class="modal">

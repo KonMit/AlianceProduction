@@ -98,57 +98,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar">
-        <a href="#" class="navbar__burger">
-          <div class="navbar__burger-lines">
-            <div class="navbar__burger-line"></div>
-            <div class="navbar__burger-line"></div>
-            <div class="navbar__burger-line"></div>
-          </div>
-          <span class="navbar__burger-title title title_h3">Меню</span>
-        </a>
-        <a href="/" class="navbar__logo logo-light">
-          <svg class="icon navbar__logo-svg">
-            <use href="img/sprite.svg#logo-light"></use>
-          </svg>
-        </a>
-        <a href="/" class="navbar__logo logo-dark">
-          <svg class="icon navbar__logo-svg">
-            <use href="img/sprite.svg#logo-dark"></use>
-          </svg>
-        </a>
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="./about.php" class="navbar__link">О компании</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Контрактное производство</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Собственные торговые марки</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Новости</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Контакты</a>
-          </li>
-        </ul>
-        <div class="navbar__right">
-          <a href="tel:+74996861014" class="navbar__phone">
-            <svg class="icon navbar__phone-icon" width="24" height="24">
-              <use href="img/sprite.svg#phone"></use>
-            </svg>
-            <span class="navbar__phone-text">+7 (499) 686-10-14</span>
-          </a>
-          <button class="navbar__button button" type="button" data-toggle="modal">
-            <span class="navbar__button-text">Получить консультацию</span>
-            <svg class="icon navbar__button-icon" width="24" height="24">
-              <use href="img/sprite.svg#phone-light"></use>
-            </svg>
-          </button>
-        </div>
-      </nav>
+      <?php $navbar_type = "navbar_dark"; include_once("./templates/navbar.php"); ?>
       <header class="header">
         <div class="container header__container">
           <div class="header__content">
@@ -217,60 +167,7 @@
           </div>
         </div>
       </header>
-      <section class="procedure container">
-        <div class="separator"></div>
-        <h2 class="procedure__title title title_h2">Схема работы</h2>
-        <div class="swiper procedure__slider">
-          <!-- Additional required wrapper -->
-          <ol class="swiper-wrapper procedure__list steps">
-            <!-- Slides -->
-            <li class="swiper-slide steps__item">
-              <span class="steps__num">01</span>
-              <h3 class="steps__title title title_h3">Знакомство</h3>
-              <p class="steps__text">
-                Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
-                воздействия.
-              </p>
-              <a href="#" class="steps__item-link button-link">Оставить заявку</a>
-            </li>
-            <li class="swiper-slide steps__item">
-              <span class="steps__num">02</span>
-              <h3 class="steps__title title title_h3">Заключение договора</h3>
-              <p class="steps__text">Лишь интерактивные прототипы призваны к ответу.</p>
-            </li>
-            <li class="swiper-slide steps__item">
-              <span class="steps__num">03</span>
-              <h3 class="steps__title title title_h3">Производство</h3>
-              <p class="steps__text">
-                А также стремящиеся вытеснить традиционное производство, нанотехнологии
-                функционально разнесены на независимые элементы.
-              </p>
-            </li>
-            <li class="swiper-slide steps__item">
-              <span class="steps__num">04</span>
-              <h3 class="steps__title title title_h3">Доставка</h3>
-              <p class="steps__text">
-                В частности, экономическая повестка сегодняшнего дня говорит о возможностях
-                приоритизации разума над эмоциями.
-              </p>
-            </li>
-          </ol>
-
-          <!-- If we need navigation buttons -->
-          <div class="procedure__slides-buttons">
-            <button class="procedure__slide-button-prev slide-button-prev_primary" type="button">
-              <svg class="icon" width="36" height="24">
-                <use href="img/sprite.svg#arrow-prev"></use>
-              </svg>
-            </button>
-            <button class="procedure__slide-button-next slide-button-next_primary" type="button">
-              <svg class="icon" width="36" height="24">
-                <use href="img/sprite.svg#arrow-next"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
+      <?php include_once('./templates/procedure.php');?>
       <section class="production">
         <div class="production__container container">
           <div class="separator"></div>
@@ -392,139 +289,7 @@
           </div>
         </div>
       </section>
-      <section class="clients">
-        <div class="clients__container container">
-          <div class="separator"></div>
-          <div class="clients__wrapper">
-            <div class="clients__category">
-              <h2 class="clients__title title title_h2">
-                Производим аэрозольную продукцию для разных сфер
-              </h2>
-              <div class="clients__category-list">
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#him"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Химические производства</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#car-wash"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Автомойки</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#eat"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Пищевая продукция</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#brush"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Лаки и краски</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#cosmetic"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Косметические средства</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#car-cosmetic"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Автомобильная косметика</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#shirt"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Косметика по уходу за одеждой</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#boots"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Косметика по уходу за обувью</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#brics"></use>
-                  </svg>
-                  <p class="clients__category-item-text">Строительные материалы</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-                <div class="clients__category-item">
-                  <svg class="icon clients__category-item-img">
-                    <use href="img/sprite.svg#more"></use>
-                  </svg>
-                  <p class="clients__category-item-text">И многих других</p>
-                  <!-- /.clients__category-item-text -->
-                </div>
-                <!-- /.clients__category-item -->
-              </div>
-              <!-- /.clients__category-list -->
-            </div>
-            <div class="clients__logo-list">
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-              <div class="clients__logo-item">
-                <img src="img/client-logo.png" alt="client-logo" class="clients__logo-item-img" />
-              </div>
-              <!-- /.clients__logo-item -->
-            </div>
-          </div>
-        </div>
-      </section>
+      <?php include_once('./templates/clients.php');?>
       <section class="blog">
         <div class="blog__container container">
           <div class="separator"></div>
@@ -583,7 +348,7 @@
           </div>
         </div>
       </section>
-      <?php include_once('footer.php');?>
+      <?php include_once('./templates/footer.php');?>
       <div class="modal">
         <div class="modal__container">
           <form action="handler.php" method="POST" class="modal__form cta__content cta-form">
@@ -637,7 +402,7 @@
           </form>
         </div>
       </div>
-      <?php include_once('modal-thanks.html');?>
+      <?php include_once('./templates/modal-thanks.php');?>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
