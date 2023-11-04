@@ -7,7 +7,7 @@
     }
     ?>
     <div class="mark__list">
-      <a href="./agtech.php" class="mark__item">
+      <a href="./ag-tech.php" class="mark__item">
           <svg class="icon mark__svg">
               <use href="img/sprite.svg#ag-tech"></use>
           </svg>
@@ -17,7 +17,7 @@
           создаёт предпосылки для поставленных обществом задач.
           </p>
       </a>
-      <a href="#" class="mark__item">
+      <a href="./trademarks/aliance-production.php" class="mark__item">
           <svg class="icon mark__svg">
               <use href="img/sprite.svg#aliance-production"></use>
           </svg>

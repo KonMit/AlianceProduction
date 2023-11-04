@@ -14,24 +14,24 @@
     </a>
     <a href="/" class="navbar__logo logo-dark">
         <svg class="icon navbar__logo-svg">
-        <use href="img/sprite.svg#logo-dark"></use>
+        <use href="<?= $navbar_link?>img/sprite.svg#logo-dark"></use>
         </svg>
     </a>
     <ul class="navbar__list">
         <li class="navbar__item">
-        <a href="./about.php" class="navbar__link">О компании</a>
+        <a href="/about.php" class="navbar__link">О компании</a>
         </li>
         <li class="navbar__item">
-        <a href="./contracts.php" class="navbar__link">Контрактное производство</a>
+        <a href="/contracts.php" class="navbar__link">Контрактное производство</a>
         </li>
         <li class="navbar__item">
-        <a href="./trademarks.php" class="navbar__link">Собственные торговые марки</a>
+        <a href="/trademarks.php" class="navbar__link">Собственные торговые марки</a>
         </li>
         <li class="navbar__item">
-        <a href="./news.php" class="navbar__link">Новости</a>
+        <a href="/news.php" class="navbar__link">Новости</a>
         </li>
         <li class="navbar__item">
-        <a href="./contacts.php" class="navbar__link">Контакты</a>
+        <a href="/contacts.php" class="navbar__link">Контакты</a>
         </li>
     </ul>
     <div class="navbar__right">

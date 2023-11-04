@@ -64,10 +64,10 @@
 .header-inside_bg .breadcrumb__link {
   color: var(--white);
 }
-.breadcrumb_item-prev {
+.breadcrumb__item._prev {
   position: relative;
 }
-.breadcrumb_item-prev::after {
+.breadcrumb__item._prev::after {
   content: "";
   display: block;
   margin: 0 0.625rem;
@@ -78,6 +78,6 @@
 .header-inside_bg .breadcrumb_item-prev::after {
   background: var(--white);
 }
-.breadcrumb_prev {
+.breadcrumb__link._prev {
   color: var(--gray);
 }

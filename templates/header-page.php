@@ -74,7 +74,6 @@
         </div>
     </div>
 </div>
- <?php $navbar_type = "navbar_light"; include_once("./templates/navbar.php"); ?>
 <header class="header-inside  <?= $header_type ?>">
     <div class="header-inside__container container">
         <div class="header-inside__content">
@@ -82,12 +81,32 @@
         <h2 class="header-inside__title title title_h2"><?= $page_title ?></h2>
         <div class="header-inside__breadcrumb breadcrumb">
             <ul class="breadcrumb__list">
-            <li class="breadcrumb__item breadcrumb_item-prev">
-                <a href="/" class="breadcrumb__link breadcrumb_prev">Главная</a>
-            </li>
-            <li class="breadcrumb__item">
-                <span class="breadcrumb__link"><?= $page_title ?></span>
-            </li>
+            <?php
+                
+                if ($header_type) {
+                    $count = count($header_page_breadcrumb);
+                    for($i = 0; $i != $count; $i++) {
+                        $prev = "_prev";
+                        if ($i == $count - 1) {
+                            $prev = "";
+                        }
+                        echo 
+                        "<li class='breadcrumb__item {$prev}'>
+                            <a href='/' class='breadcrumb__link {$prev}'>{$header_page_breadcrumb[$i]}</a>
+                        </li>";
+                    }
+                } else {
+                  echo 
+                  " <li class='breadcrumb__item _prev'>
+                        <a href='/' class='breadcrumb__link _prev'>Главная</a>
+                    </li>
+                    <li class='breadcrumb__item'>
+                        <span class='breadcrumb__link'> {$page_title} </span>
+                    </li>";
+                }
+            
+            ?>
+            
             </ul>
         </div>
         </div>

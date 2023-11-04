@@ -7,7 +7,7 @@
         }
         ?>
         <div class="production__cards">
-            <a href="/contacts/avtohim.php" class="production__card">
+            <a href="/avtohim.php" class="production__card">
                 <div class="production__content">
                     <h3 class="production__card-title title title_h3">Автомобильная химия</h3>
                     <p class="production__text">

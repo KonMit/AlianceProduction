@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="wrapper">
-      </div>
+      <?php $navbar_type = "navbar_light"; include_once("./templates/navbar.php"); ?>
       <?php 
         $page_title = "Контрактное производство";
         include_once('./templates/header-page.php');

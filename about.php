@@ -22,6 +22,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <?php $navbar_type = "navbar_light"; include_once("./templates/navbar.php"); ?>
       <?php 
       $page_title = "О компании";
       $header_type = "";
