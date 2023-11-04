@@ -1,0 +1,45 @@
+.production {
+  padding-top: 9.375rem;
+}
+.production__container {
+}
+.production__title {
+  color: #292d33;
+  margin: 1.875rem 0rem 3.125rem 0rem;
+}
+.production__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.production__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  min-height: 37.0625rem;
+  transition: border 0.2s;
+}
+.production__card:hover {
+  border-color: #5c8ee5;
+}
+.production__content {
+  padding: 2.5rem 3.125rem 5rem 3.125rem;
+}
+.production__card-title {
+  color: #292d33;
+  transition: color 0.2s;
+  line-height: 110%;
+  margin-bottom: 0.625rem;
+}
+.production__card:hover .production__card-title {
+  color: #5c8ee5;
+}
+.production__text {
+  color: #828a99;
+  line-height: 120%;
+}
+.production__image {
+  width: 100%;
+  /* height: 18.75rem; */
+}

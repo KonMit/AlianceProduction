@@ -2,10 +2,10 @@
     <div class="mobile-menu__container">
         <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__item-link">О компании</a>
+            <a href="./about.php" class="mobile-menu__item-link">О компании</a>
         </li>
         <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__item-link">Контрактное производство</a>
+            <a href="./contracts.php" class="mobile-menu__item-link">Контрактное производство</a>
             <ul class="mobile-menu__sublist">
             <li class="mobile-menu__sublist-item">
                 <a href="#" class="mobile-menu__sublist-link">Автомобильная химия</a>
@@ -28,7 +28,7 @@
             </ul>
         </li>
         <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__item-link">Собственные марки</a>
+            <a href="./trademarks.php" class="mobile-menu__item-link">Собственные марки</a>
             <ul class="mobile-menu__sublist">
             <li class="mobile-menu__sublist-item">
                 <a href="#" class="mobile-menu__sublist-link">Автохимия AG-Tech</a>
@@ -39,10 +39,10 @@
             </ul>
         </li>
         <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__item-link">Новости</a>
+            <a href="./news.php" class="mobile-menu__item-link">Новости</a>
         </li>
         <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__item-link">Контакты</a>
+            <a href="./contacts.php" class="mobile-menu__item-link">Контакты</a>
         </li>
         </ul>
         <div class="mobile-menu__contacts">
@@ -75,7 +75,7 @@
     </div>
 </div>
  <?php $navbar_type = "navbar_light"; include_once("./templates/navbar.php"); ?>
-<header class="header-inside  <?php $header_type ?>">
+<header class="header-inside  <?= $header_type ?>">
     <div class="header-inside__container container">
         <div class="header-inside__content">
         <div class="separator"></div>

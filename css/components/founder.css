@@ -1,0 +1,50 @@
+.founder {
+  max-width: 120rem;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  padding-top: 150px;
+}
+.founder_in_container {
+  max-width: 90rem;
+  margin: auto;
+}
+.founder__container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  padding-right: 0.9375rem;
+}
+.founder__img {
+  max-height: 41.25rem;
+  object-fit: cover;
+  object-position: top;
+}
+.founder__content {
+  max-width: 720px;
+}
+.founder__content ._large {
+  max-width: none;
+}
+.founder__title {
+  color: #292d33;
+  max-width: 23.75rem;
+  margin-top: 1.875rem;
+}
+.founder__title ._large {
+  max-width: 37.5rem;
+}
+.founder__text-block {
+}
+.founder__text {
+  color: #828a99;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 1.25rem;
+}
+.founder__button-link {
+  margin-top: 30px;
+}

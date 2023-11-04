@@ -230,6 +230,41 @@ const swiperBlog = new Swiper(".blog__slider", {
   },
 });
 // === blog-slider ===
+// === features-slider ===
+const featuresSlider = new Swiper(".features-slider", {
+  speed: 400,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".features-slider__button-next",
+    prevEl: ".features-slider__button-prev",
+  },
+  breakpoints: {
+    370: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
+const researchSlider = new Swiper(".research-center__slider", {
+  speed: 1000,
+  loop: true,
+  centeredSlides: false,
+  spaceBetween: 30,
+  slidesPerView: 2,
+  navigation: {
+    nextEl: ".research-center__slide-button-next",
+    prevEl: ".research-center__slide-button-prev",
+  },
+});
+// === features-slider ===
 // ===
 // === modal scripts ===
 const modalContainer = document.querySelector(".modal__container");

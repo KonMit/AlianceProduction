@@ -1,0 +1,130 @@
+.cta {
+  position: relative;
+  padding-top: 14rem;
+}
+.cta__wrapper {
+  background: #f0f2f5;
+}
+.cta__container {
+  display: flex;
+  justify-content: flex-end;
+}
+.cta__bg {
+  position: absolute;
+  bottom: 0;
+  left: 11.625rem;
+}
+.cta__content {
+  padding: 6.25rem 0px 100px 0.4375rem;
+  max-width: 52.5rem;
+}
+.cta__title {
+  color: #292d33;
+  margin-bottom: 20px;
+}
+.cta__description {
+  color: #828a99;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 42px;
+}
+.cta__inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  gap: 30px;
+}
+.cta__input-group {
+  flex-grow: 1;
+  position: relative;
+  height: 66px;
+}
+.cta__input {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem 1.875rem;
+  color: #292d33;
+  border: 1px solid #e4e4eb;
+  transition: all 0.2s;
+  background: transparent;
+}
+.isInvalid._req.cta__input {
+  position: relative;
+  border: 1px solid #c63131 !important;
+  transition: all 0.3s;
+  box-shadow: 0px 0 3px #c63131;
+}
+.cta__input:focus {
+  border: 1px solid #5c8ee5;
+  outline: 0;
+}
+.cta__input::placeholder {
+  transform: scale(1);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 42px;
+  transition: all 0.2s;
+}
+.cta__input:focus.cta__input::placeholder {
+  position: absolute;
+  transform: scale(0);
+}
+.cta__label {
+  cursor: text;
+  transform: scale(0);
+  top: -0.7rem;
+  left: 1.875rem;
+  position: absolute;
+  color: #828a99;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding: 0 10px;
+  background: #f0f2f5;
+  transition: all 0.2s;
+}
+.cta__input:focus ~ .cta__label {
+  transform: scale(1);
+}
+.cta__input:not(:placeholder-shown) ~ .cta__label {
+  transform: scale(1);
+}
+.cta__label_error {
+  transform: scale(1) !important;
+  z-index: 100;
+  left: auto;
+  right: 1.875rem;
+}
+.cta__button-group {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+.cta__button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  padding: 1.25rem 3.125rem;
+  flex-shrink: 0;
+}
+.cta__notify-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+.cta__notify-img {
+  flex-shrink: 0;
+}
+.cta__notify-text {
+  color: #828a99;
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}

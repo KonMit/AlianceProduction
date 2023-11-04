@@ -1,0 +1,55 @@
+.mark {
+  padding-top: 9.375rem;
+}
+.mark__container {
+}
+.mark__title {
+  color: #292d33;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+.mark__list {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+}
+.mark__item {
+  display: grid;
+  grid-template-areas: "svg title title" "svg text text";
+  /* column-gap: 50px; */
+  padding: 3.125rem;
+  border: 1px solid #ebebf0;
+  transition: border 0.2s;
+}
+.mark__item:hover {
+  border-color: #5c8ee5;
+}
+.mark__svg {
+  margin-right: 50px;
+  fill: #828a99;
+  width: 11.25rem !important;
+  height: 11.25rem !important;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  grid-area: svg;
+}
+.mark__item:hover .mark__svg {
+  fill: #5c8ee5;
+}
+.mark__content {
+}
+.mark__list-title {
+  color: #292d33;
+  transition: color 0.2s;
+  grid-area: title;
+}
+.mark__item:hover .mark__list-title {
+  color: #5c8ee5;
+}
+.mark__text {
+  font-size: 1rem;
+  line-height: 160%;
+  max-width: 22.5rem;
+  color: #828a99;
+  grid-area: text;
+}

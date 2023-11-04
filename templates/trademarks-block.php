@@ -7,7 +7,7 @@
     }
     ?>
     <div class="mark__list">
-      <a href="#" class="mark__item">
+      <a href="./agtech.php" class="mark__item">
           <svg class="icon mark__svg">
               <use href="img/sprite.svg#ag-tech"></use>
           </svg>

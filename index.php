@@ -22,82 +22,82 @@
   </head>
   <body class="front-page">
     <div class="wrapper">
-      <div class="mobile-menu">
-        <div class="mobile-menu__container">
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
           <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a href="/about.html" class="mobile-menu__item-link">О компании</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__item-link">Контрактное производство</a>
+          <li class="mobile-menu__item">
+              <a href="./about.php" class="mobile-menu__item-link">О компании</a>
+          </li>
+          <li class="mobile-menu__item">
+              <a href="./contracts.php" class="mobile-menu__item-link">Контрактное производство</a>
               <ul class="mobile-menu__sublist">
-                <li class="mobile-menu__sublist-item">
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Автомобильная химия</a>
-                </li>
-                <li class="mobile-menu__sublist-item">
+              </li>
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Бытовая химия</a>
-                </li>
-                <li class="mobile-menu__sublist-item">
+              </li>
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Дезинфицирующие средства</a>
-                </li>
-                <li class="mobile-menu__sublist-item">
+              </li>
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Пищевые аэрозоли</a>
-                </li>
-                <li class="mobile-menu__sublist-item">
+              </li>
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Косметическая продукция</a>
-                </li>
-                <li class="mobile-menu__sublist-item">
+              </li>
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Краски аэрозольные</a>
-                </li>
+              </li>
               </ul>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__item-link">Собственные марки</a>
+          </li>
+          <li class="mobile-menu__item">
+              <a href="./trademarks.php" class="mobile-menu__item-link">Собственные марки</a>
               <ul class="mobile-menu__sublist">
-                <li class="mobile-menu__sublist-item">
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Автохимия AG-Tech</a>
-                </li>
-                <li class="mobile-menu__sublist-item">
+              </li>
+              <li class="mobile-menu__sublist-item">
                   <a href="#" class="mobile-menu__sublist-link">Автохимия AP</a>
-                </li>
+              </li>
               </ul>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__item-link">Новости</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__item-link">Контакты</a>
-            </li>
+          </li>
+          <li class="mobile-menu__item">
+              <a href="./news.php" class="mobile-menu__item-link">Новости</a>
+          </li>
+          <li class="mobile-menu__item">
+              <a href="./contacts.php" class="mobile-menu__item-link">Контакты</a>
+          </li>
           </ul>
           <div class="mobile-menu__contacts">
-            <a href="tel:+74996861014" class="mobile-menu__phone">+7 (499) 686-10-14</a>
-            <div class="mobile-menu__address">
+          <a href="tel:+74996861014" class="mobile-menu__phone">+7 (499) 686-10-14</a>
+          <div class="mobile-menu__address">
               <svg class="icon" width="24" height="24">
-                <use href="img/sprite.svg#mark"></use>
+              <use href="img/sprite.svg#mark"></use>
               </svg>
               <span class="mobile-menu__address-text">г. Москва, Холодильный пер. 4к1с8</span>
-            </div>
-            <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-menu__email">
+          </div>
+          <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-menu__email">
               <svg class="icon" width="24" height="24">
-                <use href="img/sprite.svg#mail"></use>
+              <use href="img/sprite.svg#mail"></use>
               </svg>
               <span class="mobile-menu__email-text">a.dragunov@tdaliance.ru</span>
-            </a>
-            <div class="mobile-menu__socials">
+          </a>
+          <div class="mobile-menu__socials">
               <a href="#" class="mobile-menu__social-link">
-                <svg class="icon" width="24" height="24">
+              <svg class="icon" width="24" height="24">
                   <use href="img/sprite.svg#vk"></use>
-                </svg>
+              </svg>
               </a>
               <a href="#" class="mobile-menu__social-link">
-                <svg class="icon" width="24" height="24">
+              <svg class="icon" width="24" height="24">
                   <use href="img/sprite.svg#inst"></use>
-                </svg>
+              </svg>
               </a>
-            </div>
           </div>
-        </div>
+          </div>
       </div>
+    </div>
       <?php $navbar_type = "navbar_dark"; include_once("./templates/navbar.php"); ?>
       <header class="header">
         <div class="container header__container">
@@ -154,12 +154,12 @@
             <!-- If we need navigation buttons -->
             <div class="header__slides-buttons">
               <div class="header__slide-button-prev">
-                <svg class="icon" width="36" height="24">
+                <svg class="header__slide-svg" width="36" height="24">
                   <use href="img/sprite.svg#arrow-prev"></use>
                 </svg>
               </div>
               <div class="header__slide-button-next">
-                <svg class="icon" width="36" height="24">
+                <svg class="header__slide-svg" width="36" height="24">
                   <use href="img/sprite.svg#arrow-next"></use>
                 </svg>
               </div>
@@ -174,7 +174,6 @@
       $trademarks_block_title = "Собственные торговые марки";
       include_once('./templates/trademarks-block.php');
       ?>
-      
       <section class="founder">
         <img class="founder__img" src="img/founder.jpg" alt="Founder" />
         <div class="founder__container container">

@@ -1,0 +1,33 @@
+.category-inside__category {
+  max-width: 43.75rem;
+}
+.category-inside__title {
+  color: #292d33;
+}
+.category-inside__list {
+  margin-top: 38px;
+  columns: 2;
+}
+.category-inside__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.category-inside__item:not(:first-child) {
+  margin-top: 20px;
+}
+.category-inside__item-img {
+  width: 30px;
+  height: 30px;
+}
+.category-inside__item-text {
+  color: #292d33;
+  font-size: 16px;
+}
+
+@media (max-width: 720px) {
+  .category-inside__list {
+    margin-top: 38px;
+    columns: 1;
+  }
+}

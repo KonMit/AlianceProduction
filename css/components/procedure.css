@@ -1,0 +1,21 @@
+.procedure {
+  padding-top: 9.375rem;
+}
+.procedure__title {
+  color: #292d33;
+  margin-top: 1.625rem;
+  margin-bottom: 0.625rem;
+}
+.procedure__list {
+  margin-top: 3.1875rem;
+}
+.procedure__slider {
+  /* width: 100%; */
+}
+.procedure__slides-buttons {
+  display: none;
+  visibility: hidden;
+}
+.procedure__slide-button-prev,
+.procedure__slide-button-next {
+}
