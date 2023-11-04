@@ -25,6 +25,7 @@
       <?php 
       $page_title = "Собственные торговые марки";
       include_once('./templates/header-page.php');
+      include_once('./templates/trademarks-block.php');
       ?>
       <?php include_once('./templates/footer.php');?>
     </div>

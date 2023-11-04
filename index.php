@@ -167,101 +167,14 @@
           </div>
         </div>
       </header>
-      <?php include_once('./templates/procedure.php');?>
-      <section class="production">
-        <div class="production__container container">
-          <div class="separator"></div>
-          <h2 class="production__title title title_h2">Контрактное производство</h2>
-          <div class="production__cards">
-            <a href="" class="production__card">
-              <div class="production__content">
-                <h3 class="production__card-title title title_h3">Автомобильная химия</h3>
-                <p class="production__text">
-                  Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
-                  воздействия.
-                </p>
-              </div>
-              <img src="img/avto-him.png" alt="Автомобильная химия" class="production__image" />
-            </a>
-            <a href="" class="production__card">
-              <div class="production__content">
-                <h3 class="production__card-title title title_h3">Бытовая химия</h3>
-                <p class="production__text">
-                  А также стремящиеся вытеснить традиционное производство, нанотехнологии
-                  функционально разнесены на независимые элементы.
-                </p>
-              </div>
-              <img src="img/bit-him.png" alt="Бытовая химия" class="production__image" />
-            </a>
-            <a href="" class="production__card">
-              <div class="production__content">
-                <h3 class="production__card-title title title_h3">Дезинфицирующие средства</h3>
-                <p class="production__text">Лишь интерактивные прототипы призваны к ответу.</p>
-              </div>
-              <img
-                src="img/dezinfect.png"
-                alt="Дезинфицирующие средства"
-                class="production__image"
-              />
-            </a>
-            <a href="" class="production__card">
-              <div class="production__content">
-                <h3 class="production__card-title title title_h3">Пищевые аэрозоли</h3>
-                <p class="production__text">
-                  Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
-                  воздействия.
-                </p>
-              </div>
-              <img src="img/dezinfect.png" alt="Пищевые аэрозоли" class="production__image" />
-            </a>
-            <a href="" class="production__card">
-              <div class="production__content">
-                <h3 class="production__card-title title title_h3">Косметическая продукция</h3>
-                <p class="production__text">Лишь интерактивные прототипы призваны к ответу.</p>
-              </div>
-              <img src="img/avto-him.png" alt="Косметическая продукция" class="production__image" />
-            </a>
-            <a href="" class="production__card">
-              <div class="production__content">
-                <h3 class="production__card-title title title_h3">Краски аэрозольные</h3>
-                <p class="production__text">
-                  А также стремящиеся вытеснить традиционное производство, нанотехнологии
-                  функционально разнесены на независимые элементы.
-                </p>
-              </div>
-              <img src="img/bit-him.png" alt="Краски аэрозольные" class="production__image" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="mark">
-        <div class="mark__container container">
-          <div class="separator"></div>
-          <h2 class="mark__title title title_h2">Cобственные торговые марки</h2>
-          <div class="mark__list">
-            <a href="#" class="mark__item">
-              <svg class="icon mark__svg">
-                <use href="img/sprite.svg#ag-tech"></use>
-              </svg>
-              <h3 class="mark__list-title title title_h3">Автохимия AG&#8209;Tech</h3>
-              <p class="mark__text">
-                Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление
-                создаёт предпосылки для поставленных обществом задач.
-              </p>
-            </a>
-            <a href="#" class="mark__item">
-              <svg class="icon mark__svg">
-                <use href="img/sprite.svg#aliance-production"></use>
-              </svg>
-              <h3 class="mark__list-title title title_h3">Автохимия AP</h3>
-              <p class="mark__text">
-                Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление
-                создаёт предпосылки для поставленных обществом задач.
-              </p>
-            </a>
-          </div>
-        </div>
-      </section>
+      <?php 
+      include_once('./templates/procedure.php');
+      $production_block_title = "Контрактное производство";
+      include_once('./templates/production.php');
+      $trademarks_block_title = "Собственные торговые марки";
+      include_once('./templates/trademarks-block.php');
+      ?>
+      
       <section class="founder">
         <img class="founder__img" src="img/founder.jpg" alt="Founder" />
         <div class="founder__container container">

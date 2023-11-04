@@ -1234,6 +1234,41 @@
 }
 .button {
 }
+.contracts-info {
+}
+.contracts-info__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.contracts-info__title {
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+.contracts-info__description {
+  color: var(--gray);
+  font-family: Noto Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 20px;
+}
+.contracts-info__more {
+  display: flex;
+  gap: 15px;
+}
+.contracts-info__more-svg {
+  width: 24px;
+  height: 24px;
+}
+.contracts-info__more-text {
+  color: #5c8ee5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
 @media (max-width: 1750px) {
   html {
     font-size: 14px !important;

@@ -22,10 +22,32 @@
   </head>
   <body>
     <div class="wrapper">
+      </div>
       <?php 
-      $page_title = "Контрактное производство";
-      include_once('./templates/header-page.php');
+        $page_title = "Контрактное производство";
+        include_once('./templates/header-page.php');
+        include_once('./templates/production.php');
+
       ?>
+      <div class="contracts-info">
+        <div class="contracts-info__container container">
+          <h3 class="contracts-info__title title title_h3">SEO Заголовок</h3>
+          <p class="contracts-info__description">
+          Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих
+          финансовых и административных условий. 
+          Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль
+          в формировании как самодостаточных, так и внешне зависимых концептуальных решений. 
+          Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+          </p>
+          <a href="#" class="contracts-info__more">
+            <svg class="icon contracts-info__more-svg">
+              <use href="img/sprite.svg#arrow_update"></use>
+            </svg>
+            <span class="contracts-info__more-text">Читать больше</span>
+          </a>
+        </div>
+        
+      </div>
       <?php include_once('./templates/footer.php');?>
     </div>
     <div class="modal">
