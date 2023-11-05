@@ -56,6 +56,41 @@
         include('./templates/founder.php');
       ?>
       <?php include('./templates/features-slider.php');?>
+      <?php 
+        $info_block_full_width = "_fullWidth";
+        $info_block_title = "Изготовление автохимии";
+        $info_block_img_link = "/img/avtohim-img-2.png";
+        $info_block_text = array(
+          "Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. 
+          Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, 
+          а значит, должны быть ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, они забывают, 
+          что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - 
+          безусловно открывает новые горизонты для поставленных обществом задач.",
+        );
+        $category_amount = 8;
+        $category_svg = array(
+          "img/sprite.svg#him",
+          "img/sprite.svg#car-wash",
+          "img/sprite.svg#him",
+          "img/sprite.svg#car-wash",
+          "img/sprite.svg#brushpaint",
+          "img/sprite.svg#him",
+          "img/sprite.svg#brushpaint",
+          "img/sprite.svg#him",
+        );
+        $category_text = array(
+          "Полное описание товаров",
+          "Актуальные цены",
+          "Полное описание товаров",
+          "Актуальные цены",
+          "Лаки и краски",
+          "Химические производства",
+          "Лаки и краски",
+          "Химические производства",
+        );
+        include('./templates/info-block.php');
+        include('./templates/features-slider.php');
+      ?>
       <?php include('./templates/research-center.php');?>
       <?php include('./templates/procedure.php');?>
       <?php include('./templates/clients.php');?>
