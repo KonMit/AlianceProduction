@@ -18,7 +18,7 @@
   width: 100%;
 }
 .info-block__img {
-  max-height: 660px;
+  max-height: 41.25rem;
   object-fit: cover;
   object-position: top;
 }
@@ -27,7 +27,7 @@
   right: 0;
 }
 .info-block__content {
-  max-width: 720px;
+  max-width: 45rem;
 }
 .info-block__content ._large {
   max-width: none;
@@ -54,6 +54,9 @@
 @media (max-width: 1430px) {
   .info-block {
     flex-direction: column-reverse;
+  }
+  .info-block._fullWidth .info-block__img {
+    position: relative;
   }
   .info-block__img {
     width: 100%;

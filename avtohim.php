@@ -89,7 +89,6 @@
           "Химические производства",
         );
         include('./templates/info-block.php');
-        include('./templates/features-slider.php');
       ?>
       <div class="avtohim-types">
         <div class="avtohim-types__container container">

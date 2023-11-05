@@ -23,7 +23,7 @@
   object-position: top;
 }
 .founder__content {
-  max-width: 720px;
+  max-width: 45rem;
 }
 .founder__content ._large {
   max-width: none;
