@@ -39,12 +39,14 @@
   object-fit: cover;
 }
 .blog-all__article-title {
+  max-width: 416px;
 }
 .blog-all__article-text {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  max-width: 416px;
 }
 .blog-all__pagination {
   width: 100%;
@@ -75,4 +77,26 @@
   color: #5c8ee5;
 }
 .blog-all__page {
+}
+@media (max-width: 1285px) {
+  .blog-all__article {
+    width: 100%;
+    max-width: none;
+    min-height: 35rem;
+  }
+}
+@media (max-width: 480px) {
+  .blog-all__article {
+    min-height: 195px;
+    max-height: 195px;
+    padding: 1.3125rem;
+  }
+  .blog-all__article-title {
+    max-width: 305px;
+  }
+
+  .blog-all__article-text {
+    display: none;
+    font-size: 20px;
+  }
 }
