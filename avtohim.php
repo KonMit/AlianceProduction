@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>О компании - Aliance Production</title>
+    <title>Автомобильная химия - Aliance Production</title>
 
     <link rel="shortcut icon" href="img/favicon-light.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -91,6 +91,136 @@
         include('./templates/info-block.php');
         include('./templates/features-slider.php');
       ?>
+      <div class="avtohim-types">
+        <div class="avtohim-types__container container">
+          <div class="avtohim-types__head">
+            <div class="separator"></div>
+            <h2 class="avtohim-types__title title title_h2">Виды автохимии</h2>
+            <p class="avtohim-types__text">
+              Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. 
+              Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных 
+              слоев населения, а значит, должны быть ассоциативно распределены по отраслям.
+            </p>
+          </div>
+          <ul class="avtohim-types__list">
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Антискотч</span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Многоцелевая смазка</span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Жидкий ключ</span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Высокотемпературная смазка</span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Универсальный очиститель деталей
+              </span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Силиконовая смазка</span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Цепная смазка</span></li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Медная смазка</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Графитовая смазка</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель кондиционера пенный</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель тормозных дисков</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель битумных пятен</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель кондционера</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель дросельной заслонки</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель обивки </span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Тефлоновая смазка</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Очиститель двигателя</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Универсальный очиститель</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Чернитель шин</span>
+            </li>
+            <li class="avtohim-types__item">
+              <svg class='avtohim-types__item-img'>
+                <use href='img/sprite.svg#linePrimary'></use>
+              </svg>
+              <span class="avtohim-types__item-text">Чернитель шин + очистка</span>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
       <?php include('./templates/research-center.php');?>
       <?php include('./templates/procedure.php');?>
       <?php include('./templates/clients.php');?>
