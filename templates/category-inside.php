@@ -1,5 +1,5 @@
 <div class="category-inside">
-    <div class="category-inside__list">
+    <div class="category-inside__list <?= $category_user_class ?>">
         <?php
         // $category_amount - количество элементов, которые необходимо вывести
         // $category_svg - массив идентификаторов svg картинок по порядку, относительно текущей страницы

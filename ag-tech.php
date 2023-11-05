@@ -56,6 +56,44 @@
         include('./templates/founder.php');
       ?>
       <?php include('./templates/features-slider.php');?>
+      <div class="catalog-download">
+        <div class="catalog-download__container container">
+          <div class="catalog-download__head">
+              <div class="separator"></div>
+              <h2 class="catalog-download__title title title_h2">Генеральный дистрибьютор<br>премиальной автохимии
+              </h2>
+              <p class="catalog-download__text">
+                Внезапно, активно развивающиеся страны третьего мира могут 
+                быть объявлены нарушающими общечеловеческие нормы этики и морали.
+              </p>
+          </div>
+
+          <?php 
+            $category_user_class = "catalog-download__list";
+            $category_amount = 4;
+            $category_svg = array(
+              "img/sprite.svg#him",
+              "img/sprite.svg#car-wash",
+              "img/sprite.svg#brushpaint",
+              "img/sprite.svg#him",
+            );
+            $category_text = array(
+              "Полное описание товаров",
+              "Актуальные цены",
+              "Лаки и краски",
+              "Химические производства",
+            );
+            include('./templates/category-inside.php');
+          ?>
+          <button class="catalog-download__btn button">
+            <svg class='avtohim-types__item-img'>
+              <use href='img/sprite.svg#download'></use>
+            </svg>
+            Скачать каталог
+          </button>
+        </div>
+        <img class="catalog-download__bg" src="img/catalog-download-bg.png" alt="">
+      </div>
       <?php include('./templates/research-center.php');?>
       <?php include('./templates/procedure.php');?>
       <?php include('./templates/clients.php');?>
