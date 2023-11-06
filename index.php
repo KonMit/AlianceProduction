@@ -243,7 +243,9 @@
             </div>
 
             <div class="blog__bottom">
-              <a href="/blog.php" class="blog__slide-link button-link">Весь блог</a>
+              <div class="blog__bottom-block-link">
+                <a href="/blog.php" class="blog__bottom-link button-link">Весь блог</a>
+              </div>
               <div class="blog__slides-buttons slide-buttons_primary">
                 <button class="blog__slide-button-prev slide-button-prev_primary" type="button">
                   <svg class="icon" width="36" height="24">

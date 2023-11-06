@@ -1,0 +1,123 @@
+.bpage-block {
+  margin-top: 100px;
+}
+.bpage-block__container {
+  width: 100%;
+}
+.bpage-block__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bpage-block__share {
+}
+.bpage-block__share-title {
+  color: var(--gray);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+.bpage-block__share-socials {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.bpage-block__share-social {
+  display: flex;
+  justify-content: center;
+}
+.bpage-block__share-link {
+  cursor: pointer;
+  border: 1px solid #ebebf0;
+  padding: 13px;
+  transition: all 0.3s;
+}
+.bpage-block__share-link:hover {
+  border: 1px solid #5c8ee5;
+}
+.avtohim-types__item-img {
+  width: 24px;
+  height: 24px;
+}
+.bpage-block__article {
+  color: var(--dark);
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.bpage-block__article-title {
+  color: inherit;
+  font-family: Noto Sans;
+  font-size: 36px;
+  line-height: 160%;
+  margin-bottom: -30px;
+}
+.bpage-block__article-tblock {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bpage-block__article-description {
+  color: inherit;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.bpage-block__article-subtitle {
+  color: inherit;
+  font-family: Noto Sans;
+  font-size: 28px;
+  line-height: 160%;
+}
+.bpage-block__article-img {
+  width: 960px;
+  max-width: 960px;
+  height: 550px;
+  max-height: 550px;
+}
+.bpage-block__article-ltitle {
+  color: inherit;
+  font-family: Noto Sans;
+  font-size: 20px;
+  line-height: 160%;
+}
+.bpage-block__article-list {
+  color: inherit;
+}
+.bpage-block__article-item {
+  color: inherit;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.bpage-block__article-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.bpage-block__article-item-img {
+  width: 16px;
+  height: 26px;
+}
+.bpage-block__article-itext {
+  color: inherit;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.bpage-block__article-list_number {
+}
+.bpage-block__article-inumber {
+  color: #5c8ee5;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
