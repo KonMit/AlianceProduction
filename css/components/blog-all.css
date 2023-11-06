@@ -50,13 +50,13 @@
 }
 .blog-all__pagination {
   width: 100%;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
 }
 .blog-all__pagination-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  column-gap: 35px;
+  column-gap: 2.1875rem;
 }
 .blog-all__pagination-item {
 }
@@ -67,7 +67,7 @@
 .blog-all__pagination-text {
   color: var(--dark);
   font-family: Noto Sans;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
@@ -93,8 +93,17 @@
   }
   .blog-all__article-title {
     max-width: 305px;
+    line-height: 120%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
   }
-
+  .blog-all__pagination-list {
+    justify-content: center;
+  }
+  .blog-all__pagination-text {
+    font-size: 14px;
+  }
   .blog-all__article-text {
     display: none;
     font-size: 20px;
