@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Блог - Aliance Production</title>
+    <title>Современная методология разработки одухотворила всех причастных - Aliance Production</title>
 
     <link rel="shortcut icon" href="img/favicon-light.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,14 +22,19 @@
   </head>
   <body>
     <div class="wrapper">
-      <?php 
-          $navbar_type = "navbar_light"; 
-          include_once("./templates/navbar.php");
-          $page_title = "Блог";
-          $header_type = "";
-          include('./templates/header-page.php');
-      ?>
-      <?php include('./templates/blog-all.php');?>
+        <?php 
+            $navbar_type = "navbar_light"; 
+            include_once("./templates/navbar.php");
+            $page_title = "Современная методология разработки одухотворила всех причастных";
+            $header_page_breadcrumb = array(
+                "Главная" => "/",
+                "Блог" => "/blog.php",
+                "Современная методология разработки одухотворила всех причастных" => "",
+            );
+            $header_type = "header-inside_bg";
+            include('./templates/header-page.php');
+        ?>
+
       <?php include('./templates/footer.php');?>
     </div>
     <div class="modal">

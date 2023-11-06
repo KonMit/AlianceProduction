@@ -83,17 +83,25 @@
             <ul class="breadcrumb__list">
             <?php
                 
-                if ($header_type) {
-                    $count = count($header_page_breadcrumb);
-                    for($i = 0; $i != $count; $i++) {
+                if (!empty($header_page_breadcrumb)) {
+                    $index = 0;
+                    foreach($header_page_breadcrumb as $key => $value) {
+                        $count = count($header_page_breadcrumb);
                         $prev = "_prev";
-                        if ($i == $count - 1) {
+                        if ($index == $count - 1) {
                             $prev = "";
+                            echo 
+                            "<li class='breadcrumb__item {$prev}'>
+                                <span class='breadcrumb__link {$prev}'>{$key}</span>
+                            </li>";
+                        } else {
+                            echo 
+                            "<li class='breadcrumb__item {$prev}'>
+                                <a href='{$value}' class='breadcrumb__link {$prev}'>{$key}</a>
+                            </li>";
                         }
-                        echo 
-                        "<li class='breadcrumb__item {$prev}'>
-                            <a href='/' class='breadcrumb__link {$prev}'>{$header_page_breadcrumb[$i]}</a>
-                        </li>";
+                        
+                        $index++;
                     }
                 } else {
                   echo 

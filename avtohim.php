@@ -27,9 +27,9 @@
         $page_title = "Автомобильная химия";
         $header_type = "header-inside_img";
         $header_page_breadcrumb = array(
-          "Главная",
-          "Контрактное производство",
-          "Автомобильная химия",
+          "Главная" => "/",
+          "Контрактное производство" => "/contracts.php",
+          "Автомобильная химия" => "",
         );
         include('./templates/header-page.php');
         $founder_in_container = "founder_in_container";
