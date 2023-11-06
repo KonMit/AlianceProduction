@@ -27,6 +27,40 @@
       $page_title = "Контакты";
       include_once('./templates/header-page.php');
       ?>
+      <div class="contacts-info">
+        <div class="contacts-info__container container">
+          <a href="tel:+74996861014" class="contacts-info__phone">+7 (999) 686-10-14</a>
+          <div class="contacts-info__address">
+            <svg class="icon" width="24" height="24">
+                <use href="img/sprite.svg#mark"></use>
+            </svg>
+            <address class="contacts-info__address-text">г. Москва, Холодильный пер. 4к1с8</address>
+          </div>
+          <a href="mailto:a.dragunov@tdaliance.ru" class="contacts-info__email">
+            <svg class="icon" width="24" height="24">
+                <use href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="contacts-info__email-text">a.dragunov@tdaliance.ru</span>
+          </a>
+          <div class="contacts-info__socials">
+            <a href="#" class="contacts-info__social-link">
+                <svg class="contacts-info__svg">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+            </a>
+            <a href="#" class="contacts-info__social-link">
+                <svg class="contacts-info__svg">
+                  <use href="img/sprite.svg#inst"></use>
+                </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-map">
+        <div class="contacts-map__container container">
+          <img class="contacts-map__map" src="img/map.png" alt="">
+        </div>
+      </div>
       <?php include('./templates/cta.php');?>
       <?php include_once('./templates/footer.php');?>
     </div>

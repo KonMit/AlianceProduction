@@ -1,0 +1,11 @@
+.contacts-map {
+}
+.contacts-map__container {
+  margin-top: 6.25rem;
+  display: flex;
+  width: 100%;
+  max-height: 37.5rem;
+}
+.contacts-map__map {
+  width: 100%;
+}
