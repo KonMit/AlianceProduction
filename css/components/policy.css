@@ -1,0 +1,16 @@
+.policy {
+}
+.policy__container {
+  margin-top: 6.25rem;
+  margin-bottom: 9.375rem;
+  width: 100% !important;
+}
+.policy__content {
+  display: block;
+  width: 100%;
+}
+.policy__article {
+  display: block;
+  max-width: none;
+  width: 100%;
+}

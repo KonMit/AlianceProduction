@@ -78,7 +78,7 @@
         <span class="footer__copyright">
             &copy; 2023 «Aliance Production». Все права защищены.
         </span>
-        <a href="#" class="footer__policy">Политики конфиденциальности</a>
+        <a href="/policy.php" class="footer__policy">Политики конфиденциальности</a>
         </div>
 
         <div class="footer__made-in made-in">
