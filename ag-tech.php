@@ -97,6 +97,7 @@
       <?php include('./templates/research-center.php');?>
       <?php include('./templates/procedure.php');?>
       <?php include('./templates/clients.php');?>
+      <?php include('./templates/cta.php');?>
       <?php include('./templates/footer.php');?>
     </div>
     <div class="modal">

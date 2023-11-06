@@ -30,6 +30,7 @@
           include('./templates/header-page.php');
       ?>
       <?php include('./templates/blog-all.php');?>
+      <?php include('./templates/cta.php');?>
       <?php include('./templates/footer.php');?>
     </div>
     <div class="modal">

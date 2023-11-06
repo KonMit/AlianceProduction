@@ -262,6 +262,7 @@
           </div>
         </div>
       </section>
+      <?php include('./templates/cta.php');?>
       <?php include_once('./templates/footer.php');?>
       <div class="modal">
         <div class="modal__container">

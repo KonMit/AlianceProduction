@@ -107,6 +107,7 @@
       ?>
       <?php include_once('./templates/research-center.php');?>
       <?php include_once('./templates/clients.php');?>
+      <?php include('./templates/cta.php');?>
       <?php include_once('./templates/footer.php');?>
     </div>
     <div class="modal">

@@ -48,6 +48,7 @@
         </div>
         
       </div>
+      <?php include('./templates/cta.php');?>
       <?php include_once('./templates/footer.php');?>
     </div>
     <div class="modal">
